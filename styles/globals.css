@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navBtn {
+        @apply hidden text-gray-200 px-4 md:inline-flex font-semibold
+        cursor-pointer hover:border-b border-gray-400
+    }
+
+    .socialmedia-icons {
+        @apply h-8 w-8 rounded-full cursor-pointer hover:border-4 border-gray-400
+    }
+}
