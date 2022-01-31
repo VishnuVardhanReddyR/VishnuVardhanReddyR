@@ -3,7 +3,7 @@ import React from 'react'
 function SocialmediaIcons() {
   return (
     <div>
-      <div className="ml-8 z-999 space-y-3 mb-0 fixed items-center">
+      <div className="ml-8 z-5 space-y-3 mb-0 items-center">
         <div>
             <a href="https://github.com/VishnuVardhanReddyR">
                 <img className="socialmedia-icons" src="/github.png" alt=""/>

@@ -12,11 +12,14 @@ module.exports = {
         "macblack": "url('/macblack.jpg')",
         "macblack-m": "url('/macblack-m.jpg')",
         "keyboardblack": "url('/keybordblack.jpg')",
+        "wave": "url('/aboutWave.jpeg')",
       }),
       colors:{
         'bgColor': '#100C08'
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwind-scrollbar-hide")
+  ],
 }

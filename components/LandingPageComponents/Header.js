@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Header() {
     return (
-    <div className="w-screen z-999 bg-black fixed">
+    <div className="w-screen z-9 bg-black fixed">
         <div className="flex justify-between min-w-screen py-4 mx-5 items-center">
             <div className="relative lg:inline-grid h-8 w-20 p-4 lg:h-16">
                 <Image
