@@ -15,7 +15,9 @@ module.exports = {
         "wave": "url('/aboutWave.jpeg')",
       }),
       colors:{
-        'bgColor': '#100C08'
+        'Primary': '#4B0082',
+        'Primary-hover': '#663399',
+        'nav': '#404053'
       },
     },
   },
