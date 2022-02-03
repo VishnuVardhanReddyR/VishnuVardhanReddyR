@@ -2,28 +2,47 @@ import React from 'react'
 
 function MyServices() {
   return (
-    <div>
-      <div className="bg-black h-full">
-          <p className="text-2xl text-white font-bold border-b border-gray-700 mb-4 text-line">My Services</p>
-          <div className="grid grid-cols-1 lg:grid-cols-3"> 
-            <div className="grid grid-cols-1 py-10 px-4 rounded-lg shadow-lg border-r-2 border-x-gray-500">
-                <img className="w-10 lg:w-28" src="/WebDev.png" alt="" />
-                <p className="mt-8 text-2xl font-bold text-gray-400"> Web Development</p>
-                <p className="mt-2 text-sm text-gray-500">Websites using frontend frameworks like reactjs, nextjs.</p>
-            </div>
-            <div className="grid grid-cols-1 py-10 px-4 rounded-lg shadow-lg border-r-2 border-x-gray-500">
-                <img className="w-10 lg:w-28" src="/responsive.png" alt="" />
-                <p className="mt-8 text-2xl font-bold text-gray-400"> Fully Responsive</p>
-                <p className="mt-2 text-sm text-gray-500">Websites that are comapatible in all kinds of screens.</p>
-            </div>
-            <div className="grid grid-cols-1 py-10 px-4 rounded-lg shadow-lg">
-                <img className="w-10 lg:w-28" src="photoshop.png" alt="" />
-                <p className="mt-8 text-2xl font-bold text-gray-400"> PSD design</p>
-                <p className="mt-2 text-sm text-gray-500">Photoshop skills to edit the images shown in the website.</p>
-            </div>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col">
+          <div class="h-1 bg-gray-900 rounded overflow-hidden">
+            <div class="w-48 h-full bg-Primary"></div>
           </div>
+          <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-2">
+            <h1 class="sm:w-2/5 text-gray-300 font-medium title-font text-2xl sm:mb-0">My Services</h1>
+          </div>
+        </div>
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-32 overflow-hidden md:h-64">
+              <img alt="content" class="object-cover object-center h-32 w-32 md:h-64 md:w-64" src="/WebDev.png" />
+            </div>
+            <h2 class="text-xl font-medium title-font text-gray-300 mt-5">Web Development</h2>
+            <p class="text-base leading-relaxed mt-2">
+              Web Development using Frontend-frameworks such as React.js and Next.js
+            </p>
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-32 overflow-hidden md:h-64">
+              <img alt="content" class="object-cover object-center h-32 w-32 md:h-64 md:w-64" src="/responsive.png" />
+            </div>
+            <h2 class="text-xl font-medium title-font text-gray-300 mt-5">Fully Responsive</h2>
+            <p class="text-base leading-relaxed mt-2">
+              Websites that are Fully Responsive and compatible with all screen sizes 
+            </p>
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-32 overflow-hidden md:h-64">
+              <img alt="content" class="object-cover object-center h-32 w-32 md:h-64 md:w-64" src="/photoshop.png" />
+            </div>
+            <h2 class="text-xl font-medium title-font text-gray-300 mt-5">PSD Design</h2>
+            <p class="text-base leading-relaxed mt-2">
+              Photshop skills for editing embedded images on a website
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

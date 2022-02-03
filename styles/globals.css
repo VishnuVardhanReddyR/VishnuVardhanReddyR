@@ -4,6 +4,6 @@
 
 @layer components {
     .socialmedia-icons {
-        @apply h-8 w-8 flex justify-end rounded-full cursor-pointer hover:border-4 border-gray-400
+        @apply h-8 w-8 rounded-full cursor-pointer hover:border-4 border-gray-400
     }
 }

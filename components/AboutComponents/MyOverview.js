@@ -2,28 +2,28 @@ import React from 'react'
 
 function MyOverview() {
   return (
-    <div>
-      <div className="space-y-4 items-start">
-          <p className="text-4xl">Who am i?</p>
-          <p className="text-2xl text-gray-400">I'm Vishnu Vardhan Reddy, an Engineer and Web Developer</p>
-          <p className="text-sm space-x-6">I am a freelancer based in the India and I have been building 
-              noteworthy websites for years, which comply with the latest design trends. 
-              I help convert a vision and an idea into meaningful and useful Products. Having a sharp eye for 
-              product evolution helps me prioritize tasks, iterate fast and deliver faster.</p>
-            <hr className="border-t-[1px] border-gray-800" /> 
-            <div className="text-sm grid grid-cols-2 text-align-left">
-                <div className="cols-span-1">
-                    <p><b>Name : </b>Vishnu Vardhan Reddy Rapuru</p>
-                    <p><b>Age : </b>23</p>
-                </div>
-                <div className="cols-span-1">
-                    <p><b>Email : </b>vishnurapuru10@gmail.com</p>
-                    <p><b>From : </b>Hyderabad, India</p>
-                </div>
-            </div>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <img className="w-96 h-72 mx-16 mb-10 lg:mb-0 lg:w-112 lg:h-84" src="/overview.png" />
+        <div class="md:w-3/5 md:pl-6">
+          <h2 class="sm:text-3xl text-2xl text-gray-300 font-medium title-font mb-2 md:w-2/5">
+            As a Software Engineer and Web Developer, I am Vishnu Vardhan.
+          </h2>
+          <p class="leading-relaxed text-base">
+            As a freelancer based in India, I have been developing noteworthy websites for years that follow current trends. It is my job to turn ideas into solutions. Being able to see product evolution clearly helps me prioritize tasks, iterate promptly, and deliver projects faster.
+          </p>
+          <div class="flex md:mt-4 mt-6">
+              <h4 className="text-gray-400 mr-8"><b className="text-gray-300">Name: </b> Vishnu Vardhan Reddy Rapuru</h4>
+              <h4 className="text-gray-400"><b className="text-gray-300">Age: </b>23</h4>
+          </div>
+          <div class="flex md:mt-4 mt-6">
+              <h4 className="text-Primary mr-10"><b className="text-gray-300 mr-2">Email: </b> vishnurapuru10@gmail.com</h4>
+              <h4 className="text-gray-400"><b className="text-gray-300">From: </b>Hyderabad, India</h4>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 
-export default MyOverview
+export default MyOverview;

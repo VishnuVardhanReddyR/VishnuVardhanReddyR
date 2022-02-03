@@ -4,6 +4,7 @@ import Header from "../components/LandingPageComponents/Header";
 import About from "../components/About";
 import Resume from "../components/Resume";
 import styled from "styled-components";
+import NavDots from "../components/NavDots";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <LandingPage />
       <About />
+      <NavDots />
     </div>
   )
 }
