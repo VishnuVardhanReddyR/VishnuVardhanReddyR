@@ -11,7 +11,7 @@ function Footer() {
                 </span>
             </a>
             <p className="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2022 —
-            <a href="https://twitter.com/knyttneve" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@Vishnu Vardhan Reddy Rapuru</a>
+            <a href="https://www.twitter.com/vishnu_rapuru" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@Vishnu Vardhan Reddy Rapuru</a>
             </p>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a className="text-gray-400" href="https://www.facebook.com/192.168.2.v">
