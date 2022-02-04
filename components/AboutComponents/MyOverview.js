@@ -4,11 +4,10 @@ function MyOverview() {
   return (
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <img className="w-96 h-72 mx-16 mb-10 lg:mb-0 lg:w-112 lg:h-84" src="/overview.png" />
-        <div class="md:w-3/5 md:pl-6">
           <h2 class="sm:text-3xl text-2xl text-gray-300 font-medium title-font mb-2 md:w-2/5">
             As a Software Engineer and Web Developer, I am Vishnu Vardhan.
           </h2>
+        <div class="md:w-3/5 md:pl-6">
           <p class="leading-relaxed text-base">
             As a freelancer based in India, I have been developing noteworthy websites for years that follow current trends. It is my job to turn ideas into solutions. Being able to see product evolution clearly helps me prioritize tasks, iterate promptly, and deliver projects faster.
           </p>

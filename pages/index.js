@@ -8,7 +8,7 @@ import NavDots from "../components/NavDots";
 
 export default function Home() {
   return (
-    <div className="bg-black scrollbar-hide">
+    <div className="bg-black max-w-screen">
       <Head>
         <title>Vishnu Vardhan Reddy R</title>
         <link rel="icon" href="/VR-logo.png" />
