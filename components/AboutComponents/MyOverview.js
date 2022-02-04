@@ -2,7 +2,7 @@ import React from 'react'
 
 function MyOverview() {
   return (
-    <section class="text-gray-600 body-font">
+    <section class="text-gray-400 body-font">
       <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <h2 class="sm:text-3xl text-2xl text-gray-300 font-medium title-font mb-2 md:w-2/5">
             As a Software Engineer and Web Developer, I am Vishnu Vardhan.

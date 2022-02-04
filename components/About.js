@@ -6,8 +6,8 @@ import MyServices from "./AboutComponents/MyServices";
 function About() {
   return (
     <div className="bg-black">
-        <div className="px-4 pt-12">
-            <div className="space-y-4 text-center justify-center mt-2">
+        <div className="px-4 ">
+            <div className="space-y-4 text-center justify-center">
                 <p className="text-sm text-gray-500 pt-10">Get to know me</p>
                 <p className="text-xl text-white font-semibold">About Me</p>
             </div>
