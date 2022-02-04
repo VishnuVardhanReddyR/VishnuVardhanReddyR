@@ -4,6 +4,8 @@ import Header from "../components/LandingPageComponents/Header";
 import About from "../components/About";
 import Resume from "../components/Resume";
 import Portfolio from "../components/Portfolio";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import styled from "styled-components";
 import NavDots from "../components/NavDots";
 
@@ -14,13 +16,14 @@ export default function Home() {
         <title>Vishnu Vardhan Reddy R</title>
         <link rel="icon" href="/VR-logo.png" />
       </Head>
-      <div className="scrollbar-hide">
+
         <Header />
         <LandingPage />
         <About />
         <Resume />
         <Portfolio />
-      </div>
+        <Contact />
+        <Footer />
     </div>
   )
 }

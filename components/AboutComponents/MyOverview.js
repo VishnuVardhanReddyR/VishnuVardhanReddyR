@@ -16,7 +16,7 @@ function MyOverview() {
               <h4 className="text-gray-400"><b className="text-gray-300">Age: </b>23</h4>
           </div>
           <div class="flex md:mt-4 mt-6">
-              <h4 className="text-Primary mr-10"><b className="text-gray-300 mr-2">Email: </b> vishnurapuru10@gmail.com</h4>
+              <h4 className="text-Primary mr-10"><b className="text-gray-300 mr-2">Email: </b><a href="mailto:vishnurapuru@gmail.com">vishnurapuru10@gmail.com</a></h4>
               <h4 className="text-gray-400"><b className="text-gray-300">From: </b>Hyderabad, India</h4>
           </div>
         </div>
