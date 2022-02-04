@@ -3,8 +3,8 @@ import Loader from "./Extraas/Loader"
 
 function Resume() {
   return (
-    <div>
-      <div className="mt-20 px-8">
+    <div id="Resume" className="mt-32 pt-8">
+      <div className="px-8">
           <div className="space-y-6 text-center justify-center">
             <p className="text-gray-400 text-xl">Check out my Resume</p>
             <p className="font-bold text-white text-5xl">Resume</p>

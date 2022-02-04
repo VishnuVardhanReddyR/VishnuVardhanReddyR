@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import LandingPage from "../components/LandingPage";
-import Header from "../components/LandingPageComponents/Header";
+import Header from "../components/Header";
 import About from "../components/About";
 import Resume from "../components/Resume";
 import Portfolio from "../components/Portfolio";
@@ -11,7 +11,7 @@ import NavDots from "../components/NavDots";
 
 export default function Home() {
   return (
-    <div className="bg-black max-w-screen h-screen overflow-y-scroll scrollbar-hide">
+    <div className="bg-black max-w-screen h-screen overflow-y-scroll scrollbar-hide scroll-smooth">
       <Head>
         <title>Vishnu Vardhan Reddy R</title>
         <link rel="icon" href="/VR-logo.png" />
