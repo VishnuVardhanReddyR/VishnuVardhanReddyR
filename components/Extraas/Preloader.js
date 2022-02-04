@@ -37,11 +37,13 @@ const Balls = styled.div`
 
 function Preloader() {
   return (
-    <Screen>
-      <Balls>
-        <div className="bg-preloader ball" />
-      </Balls>
-    </Screen>
+    <div>
+        <Screen>
+          <Balls>
+            <div className="bg-preloader ball" />
+          </Balls>
+        </Screen>
+    </div>
     );
 }
 

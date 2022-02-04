@@ -3,7 +3,6 @@ import PreLoader from "../components/Extraas/Preloader";
 import { Fragment, useEffect, useState } from 'react';
 
 function MyApp({ Component, pageProps }) {
-
   const[loading, setLoading] = useState(false); 
 
   useEffect(() => {
@@ -11,21 +10,22 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 4000);
+    setTimeout(() => setLoading(false), 1000);
   });
 
   return (
       <>
         {!loading ? (
-            <Fragment>
-              <Component {...pageProps} />
-            </Fragment>
-          ):(
-            <PreLoader />
-          )
-        }
+        <Fragment>
+          <Component {...pageProps} />
+        </Fragment>
+      ):(
+          <PreLoader />
+        )     
+      }            
       </>
     );
 }
 
 export default MyApp
+
