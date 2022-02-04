@@ -4,7 +4,7 @@ function Loader() {
   return (
     <div className='items-center justify-center flex'>
         <svg width="135" height="30" viewBox="0 0 100 60">
-            <rect fill="white" x="0" y="0" width="2" height="30" rx="6">
+            <rect fill="#4B0082" x="0" y="0" width="10" height="30" rx="6">
             <animate attributeType="CSS" 
                     attributeName="height" 
                     values="30;5;30;"
@@ -18,7 +18,7 @@ function Loader() {
                     dur="1s"
                     repeatCount="indefinite" />
             </rect>
-            <rect fill="white" x="20" y="0" width="2" height="30" rx="6">
+            <rect fill="#4B0082" x="20" y="0" width="10" height="30" rx="6">
             <animate attributeType="CSS" 
                     attributeName="height" 
                     values="30;5;30"
@@ -32,7 +32,7 @@ function Loader() {
                     dur="1s"
                     repeatCount="indefinite" />
             </rect>
-            <rect fill="white" x="40" y="0" width="2" height="30" rx="6">
+            <rect fill="#4B0082" x="40" y="0" width="10" height="30" rx="6">
             <animate attributeType="CSS" 
                     attributeName="height" 
                     values="30;5;30"
@@ -46,7 +46,7 @@ function Loader() {
                     dur="1s"
                     repeatCount="indefinite" />
             </rect>
-            <rect fill="white" x="60" y="0" width="2" height="30" rx="6">
+            <rect fill="#4B0082" x="60" y="0" width="10" height="30" rx="6">
             <animate attributeType="CSS" 
                     attributeName="height" 
                     values="30;5;30"
@@ -60,7 +60,7 @@ function Loader() {
                     dur="1s"
                     repeatCount="indefinite" />
             </rect>
-            <rect fill="white" x="80" y="0" width="2" height="30" rx="6">
+            <rect fill="#4B0082" x="80" y="0" width="10" height="30" rx="6">
             <animate attributeType="CSS" 
                     attributeName="height" 
                     values="30;5;30"

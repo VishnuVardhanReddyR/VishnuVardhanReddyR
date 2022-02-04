@@ -3,12 +3,12 @@ import Loader from "./Extraas/Loader"
 
 function Resume() {
   return (
-    <div className="h-screen">
-      <div className="mt-20 pt-8 bg-black">
-          <div className="space-y-8 text-center justify-center">
+    <div>
+      <div className="mt-20 px-8">
+          <div className="space-y-6 text-center justify-center">
             <p className="text-gray-400 text-xl">Check out my Resume</p>
+            <p className="font-bold text-white text-5xl">Resume</p>
             <Loader />
-            <p className="font-semibold text-white text-3xl">Resume</p>
           </div>
           <div>
           <section className="text-gray-400 body-font">
@@ -19,7 +19,7 @@ function Resume() {
                 </div>
                 <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-Primary text-white relative z-10 title-font font-medium text-sm">1</div>
                 <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                  <div className="flex-shrink-0 w-24 h-24 bg-gray-900 text-gray-100 rounded-full inline-flex items-center justify-center">                   
+                  <div className="flex-shrink-0 w-24 h-24 rounded-full border-2 border-gray-700 inline-flex items-center justify-center">                   
                   <img className="h-12 w-12" src="/university-building.png" alt="" />
                   </div>
                   <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -34,7 +34,7 @@ function Resume() {
                 </div>
                 <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-Primary text-white relative z-10 title-font font-medium text-sm">2</div>
                 <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                  <div className="flex-shrink-0 w-24 h-24 bg-gray-900 text-gray-100 rounded-full inline-flex items-center justify-center">
+                  <div className="flex-shrink-0 w-24 h-24 rounded-full border-2 border-gray-700 inline-flex items-center justify-center">
                   <img className="h-12 w-12" src="/project.png" alt="" />
                   </div>
                   <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -49,7 +49,7 @@ function Resume() {
                 </div>
                 <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-Primary text-white relative z-10 title-font font-medium text-sm">3</div>
                 <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                  <div className="flex-shrink-0 w-24 h-24 bg-gray-900 text-gray-100 rounded-full inline-flex items-center justify-center">
+                  <div className="flex-shrink-0 w-24 h-24 rounded-full border-2 border-gray-700 inline-flex items-center justify-center">
                   <img className="h-12 w-12" src="/academic.png" alt="" />
                   </div>
                   <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -64,7 +64,7 @@ function Resume() {
                 </div>
                 <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-Primary text-white relative z-10 title-font font-medium text-sm">4</div>
                 <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                  <div className="flex-shrink-0 w-24 h-24 bg-gray-900 text-gray-100 rounded-full inline-flex items-center justify-center">
+                  <div className="flex-shrink-0 w-24 h-24 rounded-full border-2 border-gray-700 inline-flex items-center justify-center">
                   <img className="h-12 w-12" src="/freelancer.png" alt="" />
                   </div>
                   <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">

@@ -14,8 +14,8 @@ function MyServices() {
         </div>
         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
           <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div class="rounded-lg h-32 overflow-hidden lg:h-64">
-              <img alt="content" class="object-cover object-center h-32 w-32 lg:h-64 lg:w-64" src="/WebDev.png" />
+            <div class="rounded-lg h-32 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-32 w-32" src="/WebDev.png" />
             </div>
             <h2 class="text-xl font-medium title-font text-gray-300 mt-5">Web Development</h2>
             <p class="text-base leading-relaxed mt-2">
@@ -23,8 +23,8 @@ function MyServices() {
             </p>
           </div>
           <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div class="rounded-lg h-32 overflow-hidden lg:h-64">
-              <img alt="content" class="object-cover object-center h-32 w-32 lg:h-64 lg:w-64" src="/responsive.png" />
+            <div class="rounded-lg h-32 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-32 w-32" src="/responsive.png" />
             </div>
             <h2 class="text-xl font-medium title-font text-gray-300 mt-5">Fully Responsive</h2>
             <p class="text-base leading-relaxed mt-2">
@@ -32,8 +32,8 @@ function MyServices() {
             </p>
           </div>
           <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div class="rounded-lg h-32 overflow-hidden lg:h-64">
-              <img alt="content" class="object-cover object-center h-32 w-32 lg:h-64 lg:w-64" src="/photoshop.png" />
+            <div class="rounded-lg h-32 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-32 w-32" src="/photoshop.png" />
             </div>
             <h2 class="text-xl font-medium title-font text-gray-300 mt-5">PSD Design</h2>
             <p class="text-base leading-relaxed mt-2">

@@ -3,6 +3,7 @@ import LandingPage from "../components/LandingPage";
 import Header from "../components/LandingPageComponents/Header";
 import About from "../components/About";
 import Resume from "../components/Resume";
+import Portfolio from "../components/Portfolio";
 import styled from "styled-components";
 import NavDots from "../components/NavDots";
 
@@ -18,6 +19,7 @@ export default function Home() {
         <LandingPage />
         <About />
         <Resume />
+        <Portfolio />
       </div>
     </div>
   )

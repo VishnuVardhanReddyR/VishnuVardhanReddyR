@@ -6,12 +6,12 @@ import Loader from "./Extraas/Loader";
 
 function About() {
   return (
-    <div className="bg-black">
-        <div className="px-4 ">
-            <div className="space-y-4 text-center justify-center">
-                <p className="text-sm text-gray-500 pt-10">Get to know me</p>
+    <div className="">
+        <div className="px-8">
+            <div className="space-y-6 text-center justify-center">
+                <p className="text-xl text-gray-500 pt-10">Get to know me</p>
+                <p className="text-5xl text-white font-bold">About Me</p>
                 <Loader />
-                <p className="text-3xl text-white font-semibold">About Me</p>
             </div>
             <div>
               <MyOverview />
