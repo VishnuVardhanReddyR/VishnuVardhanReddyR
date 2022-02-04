@@ -17,7 +17,7 @@ export default function Home() {
         <Header />
         <LandingPage />
         <About />
-        <NavDots />
+        <Resume />
       </div>
     </div>
   )
