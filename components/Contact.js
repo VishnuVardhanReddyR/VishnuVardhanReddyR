@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Loader from "./Extraas/Loader";
+import useInView from "react-cool-inview";
+import { useRecoilState } from "recoil";
+import { contactState } from "../Atoms/contactAtom";
+
 function Contact() {
-  return (
-    <div id="Contact" className="mt-20 pt-8 px-8">
+    const[ contactOpen, setContactOpen ] = useRecoilState(contactState);
+
+    const { observe, inView} = useInView({
+        threshold: 0.25,
+        onChange: ({ observe }) => {
+        observe(); 
+        },
+        onLeave: ({ unobserve }) => {
+        unobserve();
+        },
+    });
+
+    useEffect(() => {
+        setContactOpen(inView);
+    },[inView]);
+
+return (
+    <div ref={observe} id="Contact" className="mt-20 pt-8 px-8">
         <div className="space-y-6 text-center justify-center">
             <p className="text-gray-400 text-xl">Feel free to contact me</p>
             <p className="font-bold text-white text-5xl">Get in Touch</p>

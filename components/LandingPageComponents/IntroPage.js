@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Typewriter } from "react-simple-typewriter";
+import useInView from "react-cool-inview";
+import { useRecoilState } from "recoil";
+import { homeState } from "../../Atoms/homeAtom";
 
 function IntroPage() {
+  const[ homeOpen, setHomeOpen ] = useRecoilState(homeState);
+
+  const { observe, inView} = useInView({
+    threshold: 0.25,
+    onChange: ({ observe }) => {
+      observe(); 
+    },
+    onLeave: ({ unobserve }) => {
+      unobserve();
+    },
+  });
+
+  useEffect(() => {
+    setHomeOpen(inView);
+  },[inView]);
+
   return (
-    <div id="LandingPage">
+    <div id="LandingPage" ref={observe}>
       <section className="text-gray-600 body-font h-screen relative">
         <div className="grid grid-cols-1">
           <div className="grid grid-rows-1 h-2 md:h-32"></div>
@@ -26,7 +45,7 @@ function IntroPage() {
                   </span>
                 </p>
                 <div className="flex justify-center">
-                  <button className="inline-flex font-bold text-Primary border text-xl border-Primary py-2 px-6 hover:text-Primary-hover hover:border-Primary-hover rounded">
+                  <a href="#Portfolio" className={`inline-flex font-bold text-Primary text-xl rounded-2xl border-t-8 border-l-2 border-b border-Primary py-2 px-6 hover:text-Primary-hover hover:border-Primary-hover`}>
                     <div className="mr-2 items-center justify-center pt-2">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
@@ -34,7 +53,7 @@ function IntroPage() {
                       </svg>
                     </div>
                     View My Portfolio
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

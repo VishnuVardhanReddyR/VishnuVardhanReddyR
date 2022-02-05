@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Loader from "./Extraas/Loader";
+import useInView from "react-cool-inview";
+import { useRecoilState } from "recoil";
+import { portfolioState } from "../Atoms/portfolioAtom";
 
 function Portfolio() {
-  return (
-    <div id="Portfolio" className="mt-32 pt-8 px-8">
+    const[ portfolioOpen, setPortfolioOpen ] = useRecoilState(portfolioState);
+
+    const { observe, inView} = useInView({
+        threshold: 0.25,
+        onChange: ({ observe }) => {
+        observe(); 
+        },
+        onLeave: ({ unobserve }) => {
+        unobserve();
+        },
+    });
+
+    useEffect(() => {
+        setPortfolioOpen(inView);
+    },[inView]);
+  
+    return (
+    <div id="Portfolio" ref={observe} className="mt-32 pt-8 px-8">
         <div className="space-y-6 text-center justify-center">
             <p className="text-gray-400 text-xl">Showcasing some of my best work</p>
             <p className="font-bold text-white text-5xl">Portfolio</p>

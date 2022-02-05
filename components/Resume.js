@@ -1,9 +1,28 @@
-import React from 'react';
-import Loader from "./Extraas/Loader"
+import React, { useEffect } from 'react';
+import Loader from "./Extraas/Loader";
+import useInView from "react-cool-inview";
+import { useRecoilState } from "recoil";
+import { resumeState } from "../Atoms/resumeAtom";
 
 function Resume() {
+  const [ resumeOpen, setResumeOpen ] = useRecoilState(resumeState);
+
+  const { observe, inView} = useInView({
+    threshold: 0.25,
+    onChange: ({ observe }) => {
+      observe(); 
+    },
+    onLeave: ({ unobserve }) => {
+      unobserve();
+    },
+  });
+
+  useEffect(() => {
+    setResumeOpen(inView);
+  },[inView]);
+
   return (
-    <div id="Resume" className="mt-32 pt-8">
+    <div id="Resume" className="mt-32 pt-8" ref={observe}>
       <div className="px-8">
           <div className="space-y-6 text-center justify-center">
             <p className="text-gray-400 text-xl">Check out my Resume</p>

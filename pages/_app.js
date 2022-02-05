@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import PreLoader from "../components/Extraas/Preloader";
 import { Fragment, useEffect, useState } from 'react';
+import { RecoilRoot } from 'recoil';
 
 function MyApp({ Component, pageProps }) {
   const[loading, setLoading] = useState(false); 
@@ -15,14 +16,16 @@ function MyApp({ Component, pageProps }) {
 
   return (
       <>
-        {!loading ? (
-        <Fragment>
-          <Component {...pageProps} />
-        </Fragment>
-      ):(
-          <PreLoader />
-        )     
-      }            
+        <RecoilRoot>
+            {!loading ? (
+              <Fragment>
+                <Component {...pageProps} />
+              </Fragment>
+            ):(
+                <PreLoader />
+              )     
+            }
+        </RecoilRoot>            
       </>
     );
 }

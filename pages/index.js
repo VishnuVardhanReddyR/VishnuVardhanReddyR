@@ -6,7 +6,6 @@ import Resume from "../components/Resume";
 import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import styled from "styled-components";
 import NavDots from "../components/NavDots";
 
 export default function Home() {
@@ -16,14 +15,14 @@ export default function Home() {
         <title>Vishnu Vardhan Reddy R</title>
         <link rel="icon" href="/VR-logo.png" />
       </Head>
-
-        <Header />
-        <LandingPage />
-        <About />
-        <Resume />
-        <Portfolio />
-        <Contact />
-        <Footer />
+      <Header />
+      <LandingPage />
+      <About />
+      <Resume />
+      <Portfolio />
+      <Contact />
+      <Footer />
+      <NavDots />
     </div>
   )
 }
