@@ -1,6 +1,17 @@
 import Image from "next/image";
+import { useRecoilValue } from "recoil";
+import { homeState } from "../Atoms/homeAtom";
+import { aboutState } from "../Atoms/aboutAtom";
+import { resumeState } from "../Atoms/resumeAtom";
+import { portfolioState } from "../Atoms/portfolioAtom";
+import { contactState } from "../Atoms/contactAtom";
 
 function Header() {
+    const homeOpen = useRecoilValue(homeState);
+    const aboutOpen = useRecoilValue(aboutState);
+    const resumeOpen = useRecoilValue(resumeState);
+    const portfolioOpen = useRecoilValue(portfolioState);
+    const contactOpen = useRecoilValue(contactState); 
     return (
         <header class="py-6 bg-black z-50 top-0 sticky">
             <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
@@ -9,11 +20,11 @@ function Header() {
                     <span className="bg-white ml-2 font-bold text-black">Rapuru</span>
                 </span>
                 <nav class="hidden cursor-pointer text-white md:flex space-x-12 items-center">
-                    <a href="#LandingPage" class="mr-5 hover:border-b border-white">Home</a>
-                    <a href="#About" class="mr-5 hover:border-b border-white">About</a>
-                    <a href="#Resume" class="mr-5 hover:border-b border-white">Resume</a>
-                    <a href="#Portfolio" class="mr-5 hover:border-b border-white">Portfolio</a>
-                    <a href="#Contact" class="mr-5 hover:border-b border-white">Contact</a>
+                    <a href="#LandingPage" class={`${homeOpen ? 'text-Primary font-bold' : ''} mr-5 hover:border-b border-white`}>Home</a>
+                    <a href="#About" class={`${aboutOpen ? 'text-Primary font-bold' : ''} mr-5 hover:border-b border-white`}>About</a>
+                    <a href="#Resume" class={`${resumeOpen ? 'text-Primary font-bold' : ''} mr-5 hover:border-b border-white`}>Resume</a>
+                    <a href="#Portfolio" class={`${portfolioOpen ? 'text-Primary font-bold' : ''} mr-5 hover:border-b border-white`}>Portfolio</a>
+                    <a href="#Contact" class={`${contactOpen ? 'text-Primary font-bold' : ''} mr-5 hover:border-b border-white`}>Contact</a>
                 </nav>
                 <nav class="md:hidden">
                     <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
