@@ -22,7 +22,7 @@ function Portfolio() {
     },[inView]);
   
     return (
-    <div id="Portfolio" ref={observe} className="mt-32 pt-8 px-8">
+    <div id="Portfolio" ref={observe} className="px-8 pt-8">
         <div className="space-y-6 text-center justify-center">
             <p className="text-gray-400 text-xl">Showcasing some of my best work</p>
             <p className="font-bold text-white text-5xl">Portfolio</p>

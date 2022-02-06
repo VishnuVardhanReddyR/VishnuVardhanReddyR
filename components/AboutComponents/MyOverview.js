@@ -11,13 +11,19 @@ function MyOverview() {
           <p className="leading-relaxed text-base">
             As a freelancer based in India, I have been developing noteworthy websites for years that follow current trends. It is my job to turn ideas into solutions. Being able to see product evolution clearly helps me prioritize tasks, iterate promptly, and deliver projects faster.
           </p>
-          <div className="flex md:mt-4 mt-6">
-              <h4 className="text-gray-400 mr-8"><b className="text-gray-300">Name: </b> Vishnu Vardhan Reddy Rapuru</h4>
-              <h4 className="text-gray-400"><b className="text-gray-300">Age: </b>23</h4>
-          </div>
-          <div className="flex md:mt-4 mt-6">
-              <h4 className="text-Primary mr-10"><b className="text-gray-300 mr-2">Email: </b><a href="mailto:vishnurapuru@gmail.com">vishnurapuru10@gmail.com</a></h4>
-              <h4 className="text-gray-400"><b className="text-gray-300">From: </b>Hyderabad, India</h4>
+          <div className="bg-black relative flex flex-wrap py-6 rounded shadow-md">
+            <div className="lg:w-1/2 px-6 mt-2 lg:mt-0">
+              <h2 className="title-font font-semibold text-white tracking-widest text-xs">NAME</h2>
+              <p className="mt-1">Vishnu Vardhan Reddy Rapuru</p>
+              <h2 className="title-font font-semibold text-white tracking-widest text-xs lg:mt-2">EMAIL</h2>
+              <a href="mailto:vishnurapuru10@gmail.com" className="text-Primary leading-relaxed">vishnurapuru10@gmail.com</a>
+            </div>
+            <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
+              <h2 className="title-font font-semibold text-white tracking-widest text-xs">AGE</h2>
+              <p className="leading-relaxed">23</p>
+              <h2 className="title-font font-semibold text-white tracking-widest text-xs">From</h2>
+              <p className="leading-relaxed">Hyderabad, India</p>
+            </div>
           </div>
         </div>
       </div>

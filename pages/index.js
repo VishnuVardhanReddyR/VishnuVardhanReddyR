@@ -10,7 +10,7 @@ import NavDots from "../components/NavDots";
 
 export default function Home() {
   return (
-    <div className="bg-black max-w-screen h-screen overflow-y-scroll scrollbar-hide scroll-smooth">
+    <div className="bg-black caret-inherit max-w-screen h-screen overflow-y-scroll scrollbar-hide scroll-smooth">
       <Head>
         <title>Vishnu Vardhan Reddy R</title>
         <link rel="icon" href="/VR-logo.png" />

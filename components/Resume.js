@@ -22,7 +22,7 @@ function Resume() {
   },[inView]);
 
   return (
-    <div id="Resume" className="mt-32 pt-8" ref={observe}>
+    <div id="Resume" className="pt-8" ref={observe}>
       <div className="px-8">
           <div className="space-y-6 text-center justify-center">
             <p className="text-gray-400 text-xl">Check out my Resume</p>

@@ -22,7 +22,7 @@ function Contact() {
     },[inView]);
 
 return (
-    <div ref={observe} id="Contact" className="mt-20 pt-8 px-8">
+    <div ref={observe} id="Contact" className="pt-8 px-8">
         <div className="space-y-6 text-center justify-center">
             <p className="text-gray-400 text-xl">Feel free to contact me</p>
             <p className="font-bold text-white text-5xl">Get in Touch</p>
