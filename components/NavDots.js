@@ -22,7 +22,7 @@ function NavDots() {
   const [sidebarOpen, setSidebarOpen] = useRecoilState(sidebarState); 
 
   return (
-    <nav className={`p-4 fixed right-0 top-2/4 -translate-y-1/2 space-y-2 ${sidebarOpen ? `bg-black rounded-md border border-gray-900` : ``}`}>
+    <nav className={`p-4 fixed right-0 top-1/3 md:top-1/2 -translate-y-1/2 space-y-2 ${sidebarOpen ? `bg-black rounded-md border border-gray-900` : ``}`}>
       <div className="items-center flex flex-row-reverse" >
         <a
           onMouseOver={() => setHomeLabel(true)} 

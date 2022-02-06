@@ -16,7 +16,7 @@ function LandingPage() {
 
   return (
     <div>
-      <div ref={observe} inview className="bg-macblack-m bg-cover bg-fixed bg-no-repeat bg-black md:bg-macblack" id="home">
+      <div ref={observe} inview className="bg-macblack-m bg-cover bg-fixed bg-no-repeat bg-black lg:bg-macblack" id="home">
           <IntroPage />
           {
             {inView} &&
