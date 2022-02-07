@@ -21,12 +21,8 @@ function NavDots() {
   const contactOpen = useRecoilValue(contactState);
   const [sidebarOpen, setSidebarOpen] = useRecoilState(sidebarState); 
 
-  const panel = () => {
-    sidebarOpen ? setSidebarOpen(false) : setSidebarOpen(true);
-  }
-
   return (
-    <nav onClick={panel} className={`p-4 fixed right-0 top-1/3 space-y-2 ${sidebarOpen ? `bg-black rounded-md border border-gray-900 animate-fade-in-left` : `animate-fade-out-right`}`}>
+    <nav className={`p-4 fixed right-0 top-1/3 space-y-2 ${sidebarOpen ? `bg-black rounded-md border border-gray-900 animate-fade-in-left` : `animate-fade-out-right`}`}>
       <div className="items-center flex flex-row-reverse" >
         <a
           onMouseOver={() => setHomeLabel(true)} 
