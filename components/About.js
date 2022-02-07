@@ -33,8 +33,8 @@ function About() {
                 <Loader />
             </div>
             <div>
-              <MyOverview />
-              <MyServices />
+              <MyOverview inView={inView} />
+              <MyServices inView={inView} />
             </div>
         </div>
     </div>

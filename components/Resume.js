@@ -22,7 +22,7 @@ function Resume() {
   },[inView]);
 
   return (
-    <div id="Resume" className="pt-8" ref={observe}>
+    <div id="Resume" className="pt-8 mt-8 px-4" ref={observe}>
       <div className="px-8">
           <div className="space-y-6 text-center justify-center">
             <p className="text-gray-400 text-xl">Check out my Resume</p>
@@ -37,11 +37,11 @@ function Resume() {
                   <div className="h-full w-1 bg-gray-700 pointer-events-none"></div>
                 </div>
                 <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-Primary text-white relative z-10 title-font font-medium text-sm">1</div>
-                <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                <div className={`flex-grow ${inView? `animate-fade-in-left` : ``} md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row`}>
                   <div className="flex-shrink-0 w-24 h-24 rounded-full border-2 border-gray-700 inline-flex items-center justify-center">                   
-                  <img className="h-12 w-12" src="/university-building.png" alt="" />
+                  <img className={`h-12 w-12`} src="/university-building.png" alt="" />
                   </div>
-                  <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                  <div className={`flex-grow sm:pl-6 mt-6 sm:mt-0`}>
                     <h2 className="font-medium title-font text-gray-300 mb-1 text-xl">Engineering Academics</h2>
                     <p className="leading-relaxed">Joined in Sri Indu College of Engineering and Technology for my Bachelor's of Technology in Computer Science and Engineering</p>
                   </div>
@@ -52,7 +52,7 @@ function Resume() {
                   <div className="h-full w-1 bg-gray-700 pointer-events-none"></div>
                 </div>
                 <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-Primary text-white relative z-10 title-font font-medium text-sm">2</div>
-                <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                <div className={`flex-grow ${inView? `animate-fade-in-left` : ``} md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row`}>
                   <div className="flex-shrink-0 w-24 h-24 rounded-full border-2 border-gray-700 inline-flex items-center justify-center">
                   <img className="h-12 w-12" src="/project.png" alt="" />
                   </div>
@@ -67,7 +67,7 @@ function Resume() {
                   <div className="h-full w-1 bg-gray-700 pointer-events-none"></div>
                 </div>
                 <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-Primary text-white relative z-10 title-font font-medium text-sm">3</div>
-                <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                <div className={`flex-grow ${inView? `animate-fade-in-left` : ``} md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row`}>
                   <div className="flex-shrink-0 w-24 h-24 rounded-full border-2 border-gray-700 inline-flex items-center justify-center">
                   <img className="h-12 w-12" src="/academic.png" alt="" />
                   </div>
@@ -82,7 +82,7 @@ function Resume() {
                   <div className="h-full w-1 bg-gray-700 pointer-events-none"></div>
                 </div>
                 <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-Primary text-white relative z-10 title-font font-medium text-sm">4</div>
-                <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                <div className={`flex-grow ${inView? `animate-fade-in-left` : `opacity-0`} md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row`}>
                   <div className="flex-shrink-0 w-24 h-24 rounded-full border-2 border-gray-700 inline-flex items-center justify-center">
                   <img className="h-12 w-12" src="/freelancer.png" alt="" />
                   </div>
