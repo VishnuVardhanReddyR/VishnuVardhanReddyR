@@ -23,11 +23,11 @@ function Header() {
                     <span className="bg-white ml-2 font-bold text-black">Rapuru</span>
                 </span>
                 <nav class="hidden cursor-pointer text-white lg:flex space-x-12 items-center">
-                    <a href="#LandingPage" class={`${homeOpen ? 'text-Primary font-bold' : ''} mr-5 hover:border-b border-white`}>Home</a>
-                    <a href="#About" class={`${aboutOpen ? 'text-Primary font-bold' : ''} mr-5 hover:border-b border-white`}>About</a>
-                    <a href="#Resume" class={`${resumeOpen ? 'text-Primary font-bold' : ''} mr-5 hover:border-b border-white`}>Resume</a>
-                    <a href="#Portfolio" class={`${portfolioOpen ? 'text-Primary font-bold' : ''} mr-5 hover:border-b border-white`}>Portfolio</a>
-                    <a href="#Contact" class={`${contactOpen ? 'text-Primary font-bold' : ''} mr-5 hover:border-b border-white`}>Contact</a>
+                    <a href="#LandingPage" class={`${homeOpen ? 'text-Primary-hover font-bold scale-125' : ''} mr-5 hover:border-b border-white`}>Home</a>
+                    <a href="#About" class={`${aboutOpen ? 'text-Primary-hover font-bold scale-125' : ''} mr-5 hover:border-b border-white`}>About</a>
+                    <a href="#Resume" class={`${resumeOpen ? 'text-Primary-hover font-bold scale-125' : ''} mr-5 hover:border-b border-white`}>Resume</a>
+                    <a href="#Portfolio" class={`${portfolioOpen ? 'text-Primary-hover font-bold scale-125' : ''} mr-5 hover:border-b border-white`}>Portfolio</a>
+                    <a href="#Contact" class={`${contactOpen ? 'text-Primary-hover font-bold scale-125' : ''} mr-5 hover:border-b border-white`}>Contact</a>
                 </nav>
                 <nav class={`lg:hidden ${sidebarOpen ? `hidden` : `flex`}`} onClick={() => sidebarOpen ? setSidebarOpen(false) : setSidebarOpen(true)}>
                     <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
