@@ -6,7 +6,7 @@ function SocialmediaIcons() {
         const [sidebarOpen, setSidebarOpen] = useRecoilState(sidebarState); 
   return (
     <div>
-      <div className={`${sidebarOpen ? `flex` : `hidden animate-fade-out-right`} animate-fade-in-left lg:animate-fade-in-right absolute top-3/4 right-6 lg:left-6 lg:top-72 lg:flex`}>
+      <div className={`${sidebarOpen ? `flex` : `hidden animate-fade-out-right`} animate-fade-in-left lg:animate-fade-in-right absolute top-3/4 right-6 lg:left-6 lg:top-1/3 lg:flex`}>
           <div>
                 <div className="mb-4">
                         <a href="https://github.com/VishnuVardhanReddyR">
