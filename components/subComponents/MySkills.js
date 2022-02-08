@@ -19,7 +19,7 @@ function MySkills() {
         { name: 'Java', sub:'', percent: '60%', Progress: 'w-3/5', emoji:'', anime:`animate-fill-60`},
         { name: 'Photoshop', sub:'', percent: '50%', Progress: 'w-1/2', emoji:'', anime:`animate-fill-50`},
         { name: 'Bash', sub:'', percent: '60%', Progress: 'w-3/5', emoji:'', anime:`animate-fill-60`},
-        { name: 'HTML', sub:'(Programming Language)', percent: '90%', Progress: 'w-10/12', emoji:'😜', anime:`animate-fill-90`}
+        { name: 'HTML', sub:'(Programming Language)', percent: '90%', Progress: 'w-11/12', emoji:'😜', anime:`animate-fill-90`}
     ]
 
   return (
