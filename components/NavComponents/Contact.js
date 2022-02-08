@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import Loader from "./Extraas/Loader";
+import PageTitle from '../subComponents/PageTitle';
 import useInView from "react-cool-inview";
 import { useRecoilState } from "recoil";
-import { contactState } from "../Atoms/contactAtom";
+import { contactState } from "../../Atoms/contactAtom";
 
 function Contact() {
     const[ contactOpen, setContactOpen ] = useRecoilState(contactState);
@@ -22,12 +22,8 @@ function Contact() {
     },[inView]);
 
 return (
-    <div ref={observe} id="Contact" className="pt-8 px-8">
-        <div className="space-y-6 text-center justify-center">
-            <p className="text-gray-400 text-xl">Feel free to contact me</p>
-            <p className="font-bold text-white text-5xl">Get in Touch</p>
-            <Loader />
-        </div>
+    <div ref={observe} id="Contact" className="pt-8 px-8 mt-8">
+        <PageTitle title={"Get in Touch"} sub={"Feel free to contact me"} />
         <section className="text-gray-400 body-font relative">
             <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div className={`lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative`}>
@@ -50,8 +46,6 @@ return (
                         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">EMAIL</h2>
                             <a href="mailto:vishnurapuru10@gmail.com" className="text-Primary leading-relaxed">vishnurapuru10@gmail.com</a>
-                            <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">PHONE</h2>
-                            <p className="leading-relaxed">955-016-5910</p>
                         </div>
                     </div>
                 </div>

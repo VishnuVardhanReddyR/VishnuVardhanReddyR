@@ -1,12 +1,12 @@
 import Head from 'next/head';
-import LandingPage from "../components/LandingPage";
+import LandingPage from "../components/NavComponents/LandingPage";
 import Header from "../components/Header";
-import About from "../components/About";
-import Resume from "../components/Resume";
-import Portfolio from "../components/Portfolio";
-import Contact from "../components/Contact";
+import About from "../components/NavComponents/About";
+import Resume from "../components/NavComponents/Resume";
+import Portfolio from "../components/NavComponents/Portfolio";
+import Contact from "../components/NavComponents/Contact";
 import Footer from "../components/Footer";
-import NavDots from "../components/NavDots";
+import NavDots from "../components/subComponents/NavDots";
 
 export default function Home() {
   return (

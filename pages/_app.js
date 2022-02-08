@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-import PreLoader from "../components/Extraas/Preloader";
+import PreLoader from "../components/loaders/Preloader";
 import { Fragment, useEffect, useState } from 'react';
 import { RecoilRoot } from 'recoil';
 

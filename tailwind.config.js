@@ -6,10 +6,6 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
-        },
         'fade-in-down': {
           '0%': {
               opacity: '0',
@@ -50,34 +46,49 @@ module.exports = {
               transform: 'translateY(0)'
           },
         },
-        'fade-out-right': {
-          '0%': {
-              opacity: '1',
-              transform: 'translateX(0)'
-          },
-          '100%': {
-              opacity: '0',
-              transform: 'translateX(300px)'
-          },
+        'fill-in-50': {
+          '0%':   { width: '5%', backgroundColor: '#8A2BE2'},
+          '100%': { width: '50%', backgroundColor: '#4B0082'}
+        },
+        'fill-in-60': {
+          '0%':   { width: '5%', backgroundColor: '#8A2BE2'},
+          '100%': { width: '60%', backgroundColor: '#4B0082'}
+        },
+        'fill-in-70': {
+          '0%':   { width: '5%', backgroundColor: '#8A2BE2'},
+          '100%': { width: '70%', backgroundColor: '#4B0082'}
+        },
+        'fill-in-80': {
+          '0%':   { width: '5%', backgroundColor: '#8A2BE2'},
+          '100%': { width: '80%', backgroundColor: '#4B0082'}
+        },
+        'fill-in-90': {
+          '0%':   { width: '5%', backgroundColor: '#8A2BE2'},
+          '100%': { width: '90%', backgroundColor: '#4B0082'}
         },
       },
       animation: {
-        wiggle: 'wiggle 1s ease-in-out',
-        'spin-slow': 'spin 1s',
         'fade-in-down': 'fade-in-down 1s ease-out',
         'fade-in-left': 'fade-in-left 1s ease-out',
+        'fade-in-left-1': 'fade-in-left 1.3s ease-out',
+        'fade-in-left-2': 'fade-in-left 1.6s ease-out',
+        'fade-in-left-3': 'fade-in-left 2s ease-out',
         'fade-in-right': 'fade-in-right 1s ease-out',
+        'fade-in-right-1': 'fade-in-right 1.3s ease-out',
+        'fade-in-right-2': 'fade-in-right 1.6s ease-out',
         'fade-in-up': 'fade-in-up 1s ease-out',
-        'fade-out-right': 'fade-out-right 1s ease-out',
+        'fade-in-up-1': 'fade-in-up 1.5s ease-out',
+        'fade-in-up-2': 'fade-in-up 2s ease-out',
+        'fill-50': 'fill-in-50 2s',
+        'fill-60': 'fill-in-60 2s',
+        'fill-70': 'fill-in-70 2s',
+        'fill-80': 'fill-in-80 2s',
+        'fill-90': 'fill-in-90 2s',
       },
       backgroundImage: theme => ({
-        'profile-sec': "url('/portfoliobg.png')",
         "preloader": "url('/Preloader.svg')",
-        "darkbg": "url('/blackbg.jpg')",
         "macblack": "url('/macblack.jpg')",
         "macblack-m": "url('/macblack-m.jpg')",
-        "keyboardblack": "url('/keybordblack.jpg')",
-        "wave": "url('/aboutWave.jpeg')",
       }),
       colors:{
         'Primary': '#4B0082',

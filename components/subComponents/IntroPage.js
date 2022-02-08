@@ -47,7 +47,7 @@ function IntroPage() {
                 <div className="flex justify-center cursor-pointer">
                   <a href="#Portfolio" data-aos="fade-up" className={`inline-flex animate-bounce font-bold text-Primary text-xl rounded-2xl border-t-8 border-l-2 border-b border-Primary py-2 px-6 hover:text-Primary-hover hover:border-Primary-hover`}>
                     <div className="mr-2 items-center justify-center pt-2 cursor-pointer">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                         <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
                       </svg>

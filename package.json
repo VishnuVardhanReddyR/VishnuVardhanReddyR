@@ -13,8 +13,7 @@
     "react-simple-typewriter": "^3.0.1",
     "recoil": "^0.5.2",
     "styled-components": "^5.3.3",
-    "tailwind-scrollbar-hide": "^1.1.7",
-    "tailwindcss-animation-delay": "^1.0.7"
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
     "@types/node": "17.0.4",

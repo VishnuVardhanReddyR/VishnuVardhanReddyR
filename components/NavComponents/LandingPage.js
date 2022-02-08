@@ -1,6 +1,6 @@
 import React from 'react';
-import IntroPage from "./LandingPageComponents/IntroPage";
-import SocialmediaIcons from "./LandingPageComponents/SocialmediaIcons";
+import IntroPage from "../subComponents/IntroPage";
+import SocialmediaIcons from "../subComponents/SocialmediaIcons";
 import useInView from "react-cool-inview";
 
 function LandingPage() {
@@ -16,12 +16,9 @@ function LandingPage() {
 
   return (
     <div>
-      <div ref={observe} inview className="bg-macblack-m bg-cover bg-fixed bg-no-repeat bg-black lg:bg-macblack" id="home">
+      <div ref={observe} className="bg-macblack-m bg-cover bg-fixed bg-no-repeat bg-black lg:bg-macblack" id="home">
           <IntroPage />
-          {
-            {inView} &&
-            <SocialmediaIcons />
-          }
+          <SocialmediaIcons />
       </div>
     </div>
   )
