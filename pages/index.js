@@ -6,7 +6,8 @@ import Resume from "../components/NavComponents/Resume";
 import Portfolio from "../components/NavComponents/Portfolio";
 import Contact from "../components/NavComponents/Contact";
 import Footer from "../components/Footer";
-import NavDots from "../components/subComponents/NavDots";
+import NavDots from "../components/subComponents/FixedComponents/NavDots";
+import SocialmediaIcons from "../components/subComponents/FixedComponents/SocialmediaIcons";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Contact />
       <Footer />
       <NavDots />
+      <SocialmediaIcons />
     </div>
   )
 }

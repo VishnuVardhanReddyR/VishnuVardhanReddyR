@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import useInView from "react-cool-inview";
 import { useRecoilState } from "recoil";
 import { resumeState } from "../../Atoms/resumeAtom";
-import MySkills from "../subComponents/MySkills"; 
-import PageTitle from "../subComponents/PageTitle";
-import ResumeCard from "../subComponents/ResumeCard";
+import useInView from "react-cool-inview";
+import MySkills from "../subComponents/ResumeComponents/MySkills"; 
+import ResumeCard from "../subComponents/ResumeComponents/ResumeCard";
+import PageTitle from "../subComponents/ReusableComponents/PageTitle";
 
 function Resume() {
   const [ resumeOpen, setResumeOpen ] = useRecoilState(resumeState);

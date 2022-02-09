@@ -1,5 +1,5 @@
 import React from 'react';
-import Loader from "../loaders/Loader";
+import Loader from "../../loaders/Loader";
 
 function PageTitle({sub, title}) {
   return (
@@ -13,4 +13,4 @@ function PageTitle({sub, title}) {
   )
 }
 
-export default PageTitle
+export default PageTitle;

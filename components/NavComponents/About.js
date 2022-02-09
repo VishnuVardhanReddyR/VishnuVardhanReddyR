@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import MyOverview from "../subComponents/MyOverview";
-import MyServices from "../subComponents/MyServices";
-import PageTitle from "../subComponents/PageTitle";
 import useInView from "react-cool-inview";
 import { useRecoilState } from "recoil";
 import { aboutState } from "../../Atoms/aboutAtom";
+import MyOverview from "../subComponents/AboutComponents/MyOverview";
+import MyServices from "../subComponents/AboutComponents/MyServices";
+import PageTitle from "../subComponents/ReusableComponents/PageTitle";
 
 function About() {
   const[ aboutOpen, setAboutOpen ] = useRecoilState(aboutState);

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { Typewriter } from "react-simple-typewriter";
-import useInView from "react-cool-inview";
 import { useRecoilState } from "recoil";
-import { homeState } from "../../Atoms/homeAtom";
+import useInView from "react-cool-inview";
+import { Typewriter } from "react-simple-typewriter";
+import { homeState } from "../../../Atoms/homeAtom";
 
 function IntroPage() {
   const[ homeOpen, setHomeOpen ] = useRecoilState(homeState);

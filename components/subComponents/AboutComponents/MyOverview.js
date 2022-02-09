@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { overview } from "../../lib/Data";
+import { overview } from "../../../lib/Data";
 
 function MyOverview({inView}) {
   return (
