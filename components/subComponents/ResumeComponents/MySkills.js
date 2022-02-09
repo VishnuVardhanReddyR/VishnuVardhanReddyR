@@ -1,6 +1,6 @@
 import React from 'react';
 import useInView from "react-cool-inview";
-import Skill from "./skill";
+import Skill from "./Skill";
 import SubPageTitle from "../ReusableComponents/SubPageTitle";
 
 function MySkills() {

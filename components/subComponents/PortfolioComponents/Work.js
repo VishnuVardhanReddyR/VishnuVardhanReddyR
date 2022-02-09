@@ -12,8 +12,8 @@ function Work({ count, name, href, content, img, swap, animeLeft, animeRight, le
             </>
         ) : (
             <>
-                <WorkInfo inView={inView} anime={animeLeft} name={name} content={content} href={href} />
-                <WorkIcon inView={inView} anime={animeRight} img={img} border={'border-r-2'} />
+                <WorkInfo inView={inView} anime={animeRight} name={name} content={content} href={href} />
+                <WorkIcon inView={inView} anime={animeLeft} img={img} border={'border-r-2'} />
             </> 
 
         )

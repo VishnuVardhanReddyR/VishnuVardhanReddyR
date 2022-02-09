@@ -1,5 +1,5 @@
 import React from 'react';
-import Work from "./work";
+import Work from "./Work";
 
 function Works({ inView }) {
     
