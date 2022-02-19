@@ -17,7 +17,7 @@ function MapCard({ inView }) {
         <div className={`${inView? `animate-fade-in-up animation-delay-200`: ``} bg-black relative flex flex-wrap py-6 rounded shadow-md`}>
             <div className="lg:w-1/2 px-6">
                 <h2 className="title-font font-semibold text-white tracking-widest text-xs">ADDRESS</h2>
-                <p className="mt-1">Habsiguda, uppal, Hyderabad.</p>
+                <p className="mt-1">Habsiguda, Uppal, Hyderabad.</p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                 <h2 className="title-font font-semibold text-white tracking-widest text-xs">EMAIL</h2>
