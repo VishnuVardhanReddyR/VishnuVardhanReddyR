@@ -1,6 +1,6 @@
 import { atom } from "recoil";
 
 export const resumeState = atom({
-    key: "resumeState",
+    key: "resumeAtom",
     default: false,
 });

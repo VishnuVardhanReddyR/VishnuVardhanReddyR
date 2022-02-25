@@ -1,6 +1,6 @@
 import { atom } from "recoil";
 
 export const homeState = atom({
-    key: "homeState",
+    key: "homeAtom",
     default: false,
 });

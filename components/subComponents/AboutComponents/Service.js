@@ -2,7 +2,7 @@ import React from 'react';
 
 function Service({ name, inView, anime, img, content }) {
   return (
-    <div className={`${inView? `${anime}`: ``} p-4 md:w-1/3 sm:mb-0 mb-6`}>
+    <div className={`${inView? `animate-[fade-in-up_1s_ease-out]`: ``} p-4 md:w-1/3 sm:mb-0 mb-6`}>
         <div className="rounded-lg h-32 overflow-hidden">
             <img alt="content" className="object-cover object-center h-32 w-32" src={"/" + img} />
         </div>

@@ -9,8 +9,8 @@ function MapCard({ inView }) {
             title="map" 
             className={`${inView? `animate-fade-in-right`: ``} absolute inset-0 filter grayscale-[1] contrast-[1.2] opacity-[0.16]`} 
             frameborder="0" 
-            marginheight="0" 
-            marginwidth="0" 
+            marginHeight="0" 
+            marginWidth="0" 
             scrolling="no" 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.7719430396421!2d78.54360265179997!3d17.407574936007702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99f77a5609d5%3A0x140ab5ee38921fbf!2sHome!5e0!3m2!1sen!2sin!4v1643984434234!5m2!1sen!2sin">
         </iframe>

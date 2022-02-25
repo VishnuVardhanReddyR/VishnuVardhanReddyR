@@ -6,6 +6,16 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
+        'wiggle-left': {
+          '0%': {
+              opacity: '0',
+              transform: 'rotate(-90deg)'
+          },
+          '100%': {
+              opacity: '1',
+              transform: 'rotate(0deg)'
+          },
+        },
         'fade-in-down': {
           '0%': {
               opacity: '0',

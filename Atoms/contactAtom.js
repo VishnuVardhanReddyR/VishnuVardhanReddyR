@@ -1,6 +1,6 @@
 import { atom } from "recoil";
 
 export const contactState = atom({
-    key: "contactState",
+    key: "contactAtom",
     default: false,
 });
