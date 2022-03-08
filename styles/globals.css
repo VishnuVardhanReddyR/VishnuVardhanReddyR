@@ -4,6 +4,6 @@
 
 @layer components {
     .socialmedia-icons {
-        @apply h-5 w-5 rounded-full cursor-pointer hover:bg-Primary
+        @apply h-5 w-5 cursor-pointer hover:bg-Primary
     }
 }

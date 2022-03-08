@@ -1,11 +1,10 @@
 import React from 'react';
-import { useRecoilValue, useRecoilState } from "recoil";
+import { useRecoilValue} from "recoil";
 import { homeState } from "../../../Atoms/homeAtom";
 import { aboutState } from "../../../Atoms/aboutAtom";
 import { resumeState } from "../../../Atoms/resumeAtom";
 import { portfolioState } from "../../../Atoms/portfolioAtom";
 import { contactState } from "../../../Atoms/contactAtom";
-import { sidebarState } from "../../../Atoms/sidebarAtom";
 import NavDot from "./NavDot";
 
 function NavDots() {
@@ -14,7 +13,6 @@ function NavDots() {
   const resumeOpen = useRecoilValue(resumeState);
   const portfolioOpen = useRecoilValue(portfolioState);
   const contactOpen = useRecoilValue(contactState);
-  const sidebarOpen = useRecoilValue(sidebarState); 
 
   const sideDots = [
     {name: 'Home', open: homeOpen, href: "#LandingPage"},
@@ -25,8 +23,7 @@ function NavDots() {
   ]
 
   return (
-    <nav className={`p-4 fixed right-0 top-1/3 space-y-2 
-          ${sidebarOpen ? `bg-black rounded-md border border-gray-900 animate-fade-in-left` : `animate-fade-out-right`}`}>     
+    <nav className={`p-1 fixed right-0 top-1/3 space-y-4`}>     
       {sideDots.map((dot, i) => (
         <div>
           <NavDot
