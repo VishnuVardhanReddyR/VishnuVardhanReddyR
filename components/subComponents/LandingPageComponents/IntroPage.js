@@ -44,8 +44,8 @@ function IntroPage() {
                     />
                   </span>
                 </p>
-                <div className="flex justify-center cursor-pointer">
-                  <a href="#Portfolio" data-aos="fade-up" className={`inline-flex animate-bounce font-bold text-Primary text-xl rounded-2xl border-t-8 border-l-2 border-b border-Primary py-2 px-6 hover:text-Primary-hover hover:border-Primary-hover`}>
+                <div className="flex justify-center cursor-pointer group">
+                  <a href="#Portfolio" data-aos="fade-up" className={`inline-flex group-hover:animate-bounce font-bold text-Primary text-xl rounded-2xl border-t-8 border-l-2 border-Primary py-2 px-6 hover:text-Primary-hover hover:border-Primary-hover`}>
                     <div className="mr-2 items-center justify-center pt-2 cursor-pointer">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />

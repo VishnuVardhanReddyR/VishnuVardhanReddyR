@@ -24,13 +24,13 @@ function About() {
   },[inView]);
 
   return (
-    <div id="About" ref={observe} className="mt-12">
+    <section id="About" ref={observe} className="mt-12 bg-black">
         <div className="px-8">
           <PageTitle title={'About Me'} sub={'Get to know me'} />
           <MyOverview inView={inView} />
           <MyServices inView={inView} />
         </div>
-    </div>
+    </section>
   )
 }
 

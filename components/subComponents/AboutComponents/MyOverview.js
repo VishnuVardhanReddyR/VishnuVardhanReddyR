@@ -3,7 +3,7 @@ import { overview } from "../../../lib/Data";
 
 function MyOverview({inView}) {
   return (
-    <section className="text-gray-400 body-font">
+    <section className="text-gray-400 body-font bg-black">
       <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <h2 className={`${inView? `animate-fade-in-right`: ``} sm:text-3xl text-2xl text-gray-300 font-medium title-font mb-2 md:w-2/5`}>
             {overview.header}
