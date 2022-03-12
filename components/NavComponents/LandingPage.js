@@ -16,12 +16,12 @@ function LandingPage() {
   });
 
   return (
-    <div>
-      <div ref={observe} className="bg-macblack-m bg-cover bg-fixed bg-no-repeat bg-black lg:bg-macblack" id="home">
-          <ParticlesAnime />
-          <IntroPage />
+    <section ref={observe} className="bg-macblack-m bg-cover bg-fixed bg-no-repeat lg:bg-macblack top-1/2 left-1/2" id="home">
+      <div className="container relative">
+        <ParticlesAnime />
+        <IntroPage />
       </div>
-    </div>
+    </section>
   )
 }
 

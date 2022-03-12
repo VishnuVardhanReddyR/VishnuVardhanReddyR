@@ -35,7 +35,7 @@ function ContactForm({ inView }) {
                 duration-200 ease-in-out">
             </textarea>
         </div>
-        <button className="text-white bg-Primary border-0 py-2 px-6 focus:outline-none hover:bg-Primary rounded text-lg">Send Message</button>
+        {/* <button className="text-white bg-Primary border-0 py-2 px-6 focus:outline-none hover:bg-Primary rounded text-lg">Send Message</button> */}
         <p className="text-xs text-gray-400 text-opacity-90 mt-3">Work under Progress, Feel free to use E-mail to contact me.</p>
     </div>
   )

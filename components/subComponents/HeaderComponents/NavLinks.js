@@ -22,11 +22,11 @@ const NavLinks = () => {
         name: headers[i].name,
         href: headers[i].href,
         open: 
-            (headers[i].name === "Home" && homeOpen) || 
-            (headers[i].name === "About" && aboutOpen) || 
-            (headers[i].name === "Resume" && resumeOpen) || 
-            (headers[i].name === "Portfolio" && portfolioOpen) || 
-            (headers[i].name === "Contact" && contactOpen)
+            (headers[i].name === "HOME" && homeOpen) || 
+            (headers[i].name === "ABOUT" && aboutOpen) || 
+            (headers[i].name === "RESUME" && resumeOpen) || 
+            (headers[i].name === "PORTFOLIO" && portfolioOpen) || 
+            (headers[i].name === "CONTACT" && contactOpen)
     }));
 
   return (

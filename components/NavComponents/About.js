@@ -24,7 +24,7 @@ function About() {
   },[inView]);
 
   return (
-    <section id="About" ref={observe} className="mt-12 bg-black">
+    <section id="About" ref={observe} className="">
         <div className="px-8">
           <PageTitle title={'About Me'} sub={'Get to know me'} />
           <MyOverview inView={inView} />
