@@ -1,77 +1,74 @@
-import React from 'react';
-import { XIcon, HomeIcon, UserIcon, DocumentReportIcon, BriefcaseIcon, PhoneIcon } from '@heroicons/react/outline';
-import { useRecoilState } from "recoil";
-import { sidebarState } from "../../../Atoms/sidebarAtom";
-import { SocialIcons } from '../../../lib/Data';
-import SocialMediaIcon from './SocialMediaIcon';
+// import React from 'react';
+// import { useRecoilValue, useRecoilState } from "recoil";
+// import { homeState } from "../Atoms/homeAtom";
+// import { aboutState } from "../Atoms/aboutAtom";
+// import { resumeState } from "../Atoms/resumeAtom";
+// import { portfolioState } from "../Atoms/portfolioAtom";
+// import { contactState } from "../Atoms/contactAtom";
+// import { sidebarState } from "../Atoms/sidebarAtom";
 
-function Sidebar() {
-    const [sidebarOpen, setSidebarOpen] = useRecoilState(sidebarState);
+// function Sidebar() {
+//     const homeOpen = useRecoilValue(homeState);
+//     const aboutOpen = useRecoilValue(aboutState);
+//     const resumeOpen = useRecoilValue(resumeState);
+//     const portfolioOpen = useRecoilValue(portfolioState);
+//     const contactOpen = useRecoilValue(contactState);
+//     const [sidebarOpen, setSidebarOpen] = useRecoilState(sidebarState); 
+    
+//     const panel = () => {
+//         sidebarOpen ? setSidebarOpen(false) : setSidebarOpen(true);
+//     }
+//   return (
+//     <nav onClick={panel} className={`hidden p-6 fixed right-0 top-1/3 space-y-2 ${sidebarOpen ? `bg-black rounded-md border border-gray-900 animate-fade-in-left` : `animate-fade-in-right`}`}>
+//       <div className="items-center flex flex-row-reverse" >
+//         <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 ${sidebarOpen? `opacity-1` : `opacity-0 pointer-events-none`} ${homeOpen? `text-Primary scale-125 transition-all duration-150 ease-out` : ``}`} viewBox="0 0 20 20" fill="currentColor">
+//             <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+//         </svg>
+//         <a 
+//           href="#LandingPage"
+//           onClick={() => setSidebarOpen(false)} 
+//           className={`font-semibold text-gray-500 ${sidebarOpen? `opacity-1` : `opacity-0 pointer-events-none`} ${homeOpen? `text-Primary scale-125 transition-all duration-150 ease-out` : ``} lg:hidden`}
+//         >Home
+//         </a>
+//       </div>  
+//       <div className={`${sidebarOpen? `w-full h-[0.1px] bg-gray-500` : ``} lg:hidden`}></div>
+      
+//       <div className="items-center flex flex-row-reverse">
+//         <a 
+//           href="#About"
+//           onClick={() => setSidebarOpen(false)} 
+//           className={`font-semibold text-gray-500 ${sidebarOpen? `opacity-1` : `opacity-0 pointer-events-none`} ${aboutOpen? `text-Primary scale-125 transition-all duration-150 ease-out` : ``} lg:hidden`}
+//         >About</a>
+//       </div>
+//       <div className={`${sidebarOpen? `w-full h-[0.1px] bg-gray-500` : ``}  lg:hidden`}></div>  
 
-  return (
-    <section className={`${sidebarOpen ? "w-full duration-500 ease-in-out" : "w-0"} duration-500 ease-in-out fixed top-0 right-0 h-screen bg-black overflow-hidden z-999`}>
-        <div className="container h-1/6 "></div>
-            <div className="text-gray-600 items-center justify-center">
-                <div className="container py-16 flex">
-                    <div className="container w-1/2 md:w-5/6"></div>
-                    <div onClick={() => setSidebarOpen(false)} className="flex relative flex-col pb-20 items-center justify-center w-20">
-                      <a href="#LandingPage" className="container flex justify-between items-center mb-4 pb-2 group cursor-pointer">
-                        <div className="flex-shrink-0 w-8 h-8 bg-gray-700 text-Primary rounded-full inline-flex items-center justify-center">
-                          <HomeIcon className="w-6 h-6" />
-                        </div>
-                        <div className="flex-grow px-6">
-                          <h2 className="font-semibold group-hover:text-gray-600 text-gray-300 text-3xl">Home</h2>
-                        </div>
-                      </a>
-                      <a href="#About" className="container flex justify-between items-center mb-4 pb-2 group cursor-pointer">
-                        <div className="flex-shrink-0 w-8 h-8 bg-gray-700 text-Primary rounded-full inline-flex items-center justify-center">
-                          <UserIcon className="w-6 h-6"/>
-                        </div>
-                        <div className="flex-grow px-6 ">
-                          <h2 className="font-semibold group-hover:text-gray-600 text-gray-300 text-3xl">About</h2>
-                        </div>
-                      </a>
-                      <a href="#Resume" className="container flex justify-between items-center mb-4 pb-2 group cursor-pointer">
-                        <div className="flex-shrink-0 w-8 h-8 bg-gray-700 text-Primary rounded-full inline-flex items-center justify-center">
-                          <DocumentReportIcon className="w-6 h-6"/>
-                        </div>
-                        <div className="flex-grow px-6 ">
-                          <h2 className="font-semibold group-hover:text-gray-600 text-gray-300 text-3xl">Resume</h2>
-                        </div>
-                      </a>
-                      <a href="#Portfolio" className="container flex justify-between items-center mb-4 pb-2 group cursor-pointer">
-                        <div className="flex-shrink-0 w-8 h-8 bg-gray-700 text-Primary rounded-full inline-flex items-center justify-center">
-                          <BriefcaseIcon className="w-6 h-6"/>
-                        </div>
-                        <div className="flex-grow px-6 ">
-                          <h2 className="font-semibold group-hover:text-gray-600 text-gray-300 text-3xl">Portfolio</h2>
-                        </div>
-                      </a>
-                      <a href="#Contact" className="container flex justify-between items-center mb-4 pb-2 group cursor-pointer">
-                        <div className="flex-shrink-0 w-8 h-8 bg-gray-700 text-Primary rounded-full inline-flex items-center justify-center">
-                          <PhoneIcon className="w-6 h-6"/>
-                        </div>
-                        <div className="flex-grow px-6 ">
-                          <h2 className="font-semibold group-hover:text-gray-600 text-gray-300 text-3xl">Contact</h2>
-                        </div>
-                      </a>
-                      <div className="flex ml-24 mt-8 space-x-8">
-                        {SocialIcons.map((icon, i) => (
-                          <SocialMediaIcon
-                            key={icon.name} 
-                            name={icon.name} 
-                            href={icon.href}
-                            img={icon.img}
-                          />
-                        ))}
-                      </div>
-                      
-                    </div>
-                    <div className="container w-3/4"></div>
-                </div>
-            </div>
-    </section>
-  )
-}
+//       <div className="items-center flex flex-row-reverse">
+//         <a 
+//           href="#Resume"
+//           onClick={() => setSidebarOpen(false)} 
+//           className={`font-semibold text-gray-500 ${sidebarOpen? `opacity-1` : `opacity-0 pointer-events-none`} ${resumeOpen? `text-Primary scale-125 transition-all duration-150 ease-out` : ``} lg:hidden`}
+//         >Resume</a>
+//       </div>
+//       <div className={`${sidebarOpen? `w-full h-[0.1px] bg-gray-500` : ``}  lg:hidden`}></div>  
+      
+//       <div className="items-center flex flex-row-reverse">
+//         <a 
+//           href="#Portfolio"
+//           onClick={() => setSidebarOpen(false)} 
+//           className={`font-semibold text-gray-500 ${sidebarOpen? `opacity-1` : `opacity-0 pointer-events-none`} ${portfolioOpen? `text-Primary scale-125 transition-all duration-150 ease-out` : ``} lg:hidden`}
+//         >Portfolio</a>
+//       </div>
+//       <div className={`${sidebarOpen? `w-full h-[0.1px] bg-gray-500` : ``}  lg:hidden`}></div>  
+      
+//       <div className="items-center flex flex-row-reverse">
+//         <a 
+//           href="#Contact"
+//           onClick={() => setSidebarOpen(false)} 
+//           className={`font-semibold text-gray-500 ${sidebarOpen? `opacity-1` : `opacity-0 pointer-events-none`} ${contactOpen? `text-Primary scale-125 transition-all duration-150 ease-out` : ``} lg:hidden`}
+//         >Contact</a>
+//       </div>
+//     </nav>
+//   )
+// }
 
-export default Sidebar
+// export default Sidebar

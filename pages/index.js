@@ -8,7 +8,6 @@ import Contact from "../components/NavComponents/Contact";
 import Footer from "../components/Footer";
 import NavDots from "../components/subComponents/FixedComponents/NavDots";
 import SocialmediaIcons from "../components/subComponents/FixedComponents/SocialmediaIcons";
-import Sidebar from "../components/subComponents/FixedComponents/Sidebar";
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
       <Head>
         <title>Vishnu Vardhan Reddy R</title>
         <link rel="icon" href="/VR-logo.png" />
-      
       </Head>
       <Header />
       <LandingPage />
@@ -27,7 +25,6 @@ export default function Home() {
       <Footer />
       <NavDots />
       <SocialmediaIcons />
-      <Sidebar />
     </div>
   )
 }

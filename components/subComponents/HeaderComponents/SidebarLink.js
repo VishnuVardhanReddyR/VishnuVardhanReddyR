@@ -6,11 +6,21 @@ const SidebarLink = () => {
     const [sidebarOpen, setSidebarOpen] = useRecoilState(sidebarState);
     
     return (
-        <nav onClick={() => setSidebarOpen(!sidebarOpen)} className="lg:hidden absolute top-4 right-4 w-6 h-6 flex justify-center items-center rounded-full cursor-pointer">
-            <span className={`${sidebarOpen? "-rotate-45 mt-[2px] ml-[10px] duration-500" : ""} duration-500 block absolute h-[2px] w-3 bg-white opacity-1 left-0 ml-3`}></span>
-            <span className={`${sidebarOpen? "rotate-45 duration-500" : ""} duration-500 block absolute h-[2px] w-6 bg-white opacity-1 left-0 mt-3`}></span>
-            <span className={`${sidebarOpen? "-rotate-45 ml-[1px] mb-[2px] duration-500" : ""} duration-500 block absolute h-[2px] w-3 bg-white opacity-1 left-0 mt-6`}></span>
-        </nav>
+        <>
+            <nav 
+                className="lg:hidden" 
+                onClick={() => sidebarOpen ? setSidebarOpen(false) : setSidebarOpen(true)}>
+                {sidebarOpen ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" className="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    ):(
+                    <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" fill="white" />
+                    </svg>
+                )}    
+            </nav>
+        </>
     )
 }
 

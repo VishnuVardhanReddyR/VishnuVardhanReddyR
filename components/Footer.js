@@ -6,10 +6,10 @@ function Footer() {
     <footer className="text-gray-400 border-t-2 border-gray-900 body-font z-50">
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
-                <Logo firstName={"VISHNU"} lastName={"RAPURU"} /> 
+                <Logo firstName={"Vishnu"} lastName={"Rapuru"} /> 
             </a>
             <p className="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2022 —
-            <a href="https://vishnuvardhanreddyr.vercel.app/" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@Vishnu Vardhan Reddy Rapuru</a>
+            <a href="https://www.twitter.com/vishnu_rapuru" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@Vishnu Vardhan Reddy Rapuru</a>
             </p>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a className="text-gray-400" href="https://www.facebook.com/192.168.2.v">

@@ -57,24 +57,24 @@ module.exports = {
           },
         },
         'fill-in-50': {
-          '0%':   { width: '5%', backgroundColor: '##87CEFA'},
-          '100%': { width: '50%', backgroundColor: '#0CAFFF'}
+          '0%':   { width: '5%', backgroundColor: '#8A2BE2'},
+          '100%': { width: '50%', backgroundColor: '#4B0082'}
         },
         'fill-in-60': {
-          '0%':   { width: '5%', backgroundColor: '##87CEFA'},
-          '100%': { width: '60%', backgroundColor: '#0CAFFF'}
+          '0%':   { width: '5%', backgroundColor: '#8A2BE2'},
+          '100%': { width: '60%', backgroundColor: '#4B0082'}
         },
         'fill-in-70': {
-          '0%':   { width: '5%', backgroundColor: '##87CEFA'},
-          '100%': { width: '70%', backgroundColor: '#0CAFFF'}
+          '0%':   { width: '5%', backgroundColor: '#8A2BE2'},
+          '100%': { width: '70%', backgroundColor: '#4B0082'}
         },
         'fill-in-80': {
-          '0%':   { width: '5%', backgroundColor: '##87CEFA'},
-          '100%': { width: '80%', backgroundColor: '#0CAFFF'}
+          '0%':   { width: '5%', backgroundColor: '#8A2BE2'},
+          '100%': { width: '80%', backgroundColor: '#4B0082'}
         },
         'fill-in-90': {
-          '0%':   { width: '5%', backgroundColor: '##87CEFA'},
-          '100%': { width: '90%', backgroundColor: '#0CAFFF'}
+          '0%':   { width: '5%', backgroundColor: '#8A2BE2'},
+          '100%': { width: '90%', backgroundColor: '#4B0082'}
         },
       },
       animation: {
@@ -101,8 +101,8 @@ module.exports = {
         "macblack-m": "url('/macblack-m.jpg')",
       }),
       colors:{
-        'Primary': '#0CAFFF',
-        'Primary-hover': '#318CE7',
+        'Primary': '#4B0082',
+        'Primary-hover': '#663399',
         'nav': '#404053'
       },
     },
