@@ -3,123 +3,97 @@ import Particles from "react-tsparticles";
 
 const ParticlesAnime = () => {
     const particlesInit = (main) => {
-        console.log(main);
+        
       };
     
       const particlesLoaded = (container) => {
         console.log(container);
       };
   return (
-    <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
+      <Particles
+          id="tsparticles"
+          init={particlesInit}
+          loaded={particlesLoaded}
+          className="absolute w-[70%] h-[100%] bottom-0 left-0 lg:h-[65%]" 
+          options={{
+            fullScreen: { enable: false, zIndex: 0 },
+            background: {
+              color: {
+                value: "",
+              },
+            },
+            fpsLimit: 120,
+            interactivity: {
+              events: {
+                onClick: {
+                  enable: true,
+                  mode: "push",
+                },
+                onHover: {
+                  enable: true,
+                  mode: "grab",
+                },
+                resize: true,
+              },
+              modes: {
+                bubble: {
+                  distance: 400,
+                  duration: 2,
+                  opacity: 0.2,
+                  size: 4,
+                },
+                push: {
+                  quantity: 1,
+                },
+                grab: {
+                  distance: 200,
+                  duration: 1,
+                },
+              },
+            },
             particles: {
-                number: {
-                  value: 80,
-                  density: {
-                    enable: true,
-                    value_area: 800
-                  }
-                },
-                color: {
-                  value: "#ffffff"
-                },
-                shape: {
-                  type: "triangle",
-                  stroke: {
-                    width: 0,
-                    color: "#000000"
-                  },
-                  polygon: {
-                    nb_sides: 5
-                  },
-                },
-                opacity: {
-                  value: 0.5,
-                  random: false,
-                  anim: {
-                    enable: false,
-                    speed: 1,
-                    opacity_min: 0.1,
-                    sync: false
-                  }
-                },
-                size: {
-                  value: 3,
-                  random: true,
-                  anim: {
-                    enable: false,
-                    speed: 40,
-                    size_min: 0.1,
-                    sync: false
-                  }
-                },
-                line_linked: {
-                  enable: true,
-                  distance: 150,
-                  color: "#ffffff",
-                  opacity: 0.4,
-                  width: 1
-                },
-                move: {
-                  enable: true,
-                  speed: 6,
-                  direction: "none",
-                  random: true,
-                  straight: false,
-                  out_mode: "bounce",
-                  bounce: false,
-                  attract: {
-                    enable: true,
-                    rotateX: 600,
-                    rotateY: 1200
-                  }
-                }
+              color: {
+                value: "#ffffff",
               },
-              interactivity: {
-                detect_on: "canvas",
-                events: {
-                  onhover: {
-                    enable: true,
-                    mode: "grab"
-                  },
-                  onclick: {
-                    enable: true,
-                    mode: "push"
-                  },
-                  resize: true
-                },
-                modes: {
-                  grab: {
-                    distance: 207.079689136843,
-                    line_linked: {
-                      opacity: 0.8061729816883573
-                    }
-                  },
-                  bubble: {
-                    distance: 400,
-                    size: 40,
-                    duration: 2,
-                    opacity: 8,
-                    speed: 3
-                  },
-                  repulse: {
-                    distance: 200,
-                    duration: 0.4
-                  },
-                  push: {
-                    particles_nb: 4
-                  },
-                  remove: {
-                    particles_nb: 2
-                  }
-                }
+              links: {
+                color: "#ffffff",
+                distance: 150,
+                enable: true,
+                opacity: 0.1,
+                width: 1,
               },
-              retina_detect: true
-        }}
-    />
+              collisions: {
+                enable: true,
+              },
+              move: {
+                direction: "none",
+                enable: true,
+                outMode: "bounce",
+                random: false,
+                speed: 1,
+                straight: false,
+              },
+              number: {
+                density: {
+                  enable: true,
+                  area: 800,
+                },
+                value: 100,
+              },
+              opacity: {
+                value: 0.5,
+              },
+              shape: {
+                type: "square",
+              },
+              size: {
+                random: true,
+                value: 5,
+              },
+            },
+            detectRetina: true,
+          }}
+        />
   )
 }
 

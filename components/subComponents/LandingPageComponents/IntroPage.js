@@ -3,6 +3,7 @@ import { useRecoilState } from "recoil";
 import useInView from "react-cool-inview";
 import { Typewriter } from "react-simple-typewriter";
 import { homeState } from "../../../Atoms/homeAtom";
+import ParticlesAnime from "../ReusableComponents/Particles";
 
 function IntroPage() {
   const[ homeOpen, setHomeOpen ] = useRecoilState(homeState);
@@ -23,7 +24,7 @@ function IntroPage() {
 
   return (
     <div id="LandingPage" ref={observe}>
-      <section className="text-gray-600 body-font h-screen relative">
+      <section className="text-gray-600 body-font h-screen relative md:ml-10 md:pl-12">
         <div className="grid grid-cols-1">
           <div className="grid grid-rows-1 h-2 md:h-32"></div>
           <div className="grid grid-rows-1">
