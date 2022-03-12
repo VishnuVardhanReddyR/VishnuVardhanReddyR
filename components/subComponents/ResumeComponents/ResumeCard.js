@@ -6,7 +6,7 @@ function ResumeCard({ id, inView, img, name, content}) {
         <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
             <div className="h-full w-1 bg-gray-700 pointer-events-none"></div>
         </div>
-        <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-Primary text-white relative z-1 title-font font-medium text-sm">{id}</div>
+        <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-Primary text-white relative z-10 title-font font-medium text-sm">{id}</div>
         <div className={`flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row`}>
             <div className={`flex-shrink-0 ${inView? `animate-[wiggle-left_1s_ease-out]` : ``} w-24 h-24 rounded-full border-2 border-gray-700 inline-flex items-center justify-center`}>                   
                 <img className={`h-12 w-12`} src={"/" + img} alt="" />
