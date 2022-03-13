@@ -24,14 +24,14 @@ function IntroPage() {
 
   return (
     <div id="LandingPage" ref={observe}>
-      <section className="text-gray-600 body-font h-screen relative md:ml-10 md:pl-12">
+      <section className="text-gray-600 body-font h-screen relative">
         <div className="grid grid-cols-1">
-          <div className="grid grid-rows-1 h-2 md:h-32"></div>
+          <div className="grid grid-rows-1 h-2 md:h-32 2xl:h-56"></div>
           <div className="grid grid-rows-1">
             <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
               <div className="text-center lg:w-2/3 w-full">
-                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-300">Building Beautiful Web Experience</h1>
-                <p className="text-gray-300 text-xl mb-8 leading-relaxed lg:text-5xl md:text-2xl">
+                <h1 className="title-font text-3xl sm:text-4xl 2xl:text-5xl mb-4 font-medium text-gray-300">Building Beautiful Web Experience</h1>
+                <p className="text-gray-300 text-xl mb-8 leading-relaxed md:text-2xl lg:text-5xl 2xl:text-7xl">
                   I`m{' '}
                   <span className="">
                     <Typewriter

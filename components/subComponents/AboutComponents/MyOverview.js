@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { overview } from "../../../lib/Data";
 
 function MyOverview({inView}) {
+  let name = "Vishnu Vardhan Reddy Rapuru";
+  let email = "vishnurapuru10@gmail.com";
+  let address = "Hyderabad, India";
   return (
     <section className="text-gray-400 body-font bg-black">
       <div className="container px-5 py-24 mx-auto flex flex-wrap">
@@ -15,9 +18,9 @@ function MyOverview({inView}) {
           <div className="bg-black relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6 mt-2 lg:mt-0">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">NAME</h2>
-              <p className="mt-1">Vishnu Vardhan Reddy Rapuru</p>
+              <p className="mt-1">{name}</p>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs lg:mt-2">EMAIL</h2>
-              <a href="mailto:vishnurapuru10@gmail.com" className="text-Primary leading-relaxed">vishnurapuru10@gmail.com</a>
+              <a href="mailto:vishnurapuru10@gmail.com" className="text-Primary leading-relaxed">{email}</a>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">From</h2>

@@ -16,8 +16,8 @@ function LandingPage() {
   });
 
   return (
-    <section ref={observe} className="bg-macblack-m bg-cover bg-fixed bg-no-repeat lg:bg-macblack top-1/2 left-1/2" id="home">
-      <div className="container relative">
+    <section ref={observe} className="bg-macblack-m bg-cover bg-fixed bg-no-repeat lg:bg-macblack" id="home">
+      <div className="relative w-full h-screen items-center justify-center">
         <ParticlesAnime />
         <IntroPage />
       </div>

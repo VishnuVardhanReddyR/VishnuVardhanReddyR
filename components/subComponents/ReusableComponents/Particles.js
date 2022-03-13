@@ -14,7 +14,7 @@ const ParticlesAnime = () => {
           id="tsparticles"
           init={particlesInit}
           loaded={particlesLoaded}
-          className="absolute w-[70%] h-[100%] bottom-0 left-0 lg:h-[65%]" 
+          className="absolute w-[50%] h-[60%] bottom-0 left-0" 
           options={{
             fullScreen: { enable: false, zIndex: 0 },
             background: {
@@ -46,7 +46,7 @@ const ParticlesAnime = () => {
                   quantity: 1,
                 },
                 grab: {
-                  distance: 200,
+                  distance: 100,
                   duration: 1,
                 },
               },
@@ -59,7 +59,7 @@ const ParticlesAnime = () => {
                 color: "#ffffff",
                 distance: 150,
                 enable: true,
-                opacity: 0.1,
+                opacity: 0.3,
                 width: 1,
               },
               collisions: {
