@@ -7,27 +7,24 @@ import Portfolio from "../components/NavComponents/Portfolio";
 import Contact from "../components/NavComponents/Contact";
 import Footer from "../components/Footer";
 import NavDots from "../components/subComponents/FixedComponents/NavDots";
-import SocialmediaIcons from "../components/subComponents/FixedComponents/SocialmediaIcons";
-import Sidebar from "../components/subComponents/FixedComponents/Sidebar";
 
 export default function Home() {
   return (
-    <div className="bg-black caret-inherit max-w-screen h-screen overflow-y-scroll scrollbar-hide scroll-smooth">
+    <div className="h-screen overflow-y-scroll bg-black caret-inherit max-w-screen scrollbar-hide scroll-smooth">
       <Head>
         <title>Vishnu Vardhan Reddy R</title>
         <link rel="icon" href="/VR-logo.png" />
-      
       </Head>
       <Header />
-      <LandingPage />
+      <section id="home">
+        <LandingPage />
+      </section>
       <About />
       <Resume />
       <Portfolio />
       <Contact />
       <Footer />
       <NavDots />
-      <SocialmediaIcons />
-      <Sidebar />
     </div>
   )
 }

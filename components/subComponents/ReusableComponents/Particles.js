@@ -14,7 +14,7 @@ const ParticlesAnime = () => {
           id="tsparticles"
           init={particlesInit}
           loaded={particlesLoaded}
-          className="absolute w-[50%] h-[60%] bottom-0 left-0" 
+          className="absolute w-[60%] h-[100%] bottom-0 left-0" 
           options={{
             fullScreen: { enable: false, zIndex: 0 },
             background: {
@@ -70,7 +70,7 @@ const ParticlesAnime = () => {
                 enable: true,
                 outMode: "bounce",
                 random: false,
-                speed: 1,
+                speed: 0.5,
                 straight: false,
               },
               number: {
@@ -84,7 +84,7 @@ const ParticlesAnime = () => {
                 value: 0.5,
               },
               shape: {
-                type: "square",
+                type: "circle",
               },
               size: {
                 random: true,
