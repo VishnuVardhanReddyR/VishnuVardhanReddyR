@@ -1,20 +1,21 @@
 import React from 'react';
 
-function ResumeCard({ id, inView, img, name, content}) {
+function ResumeCard({ id, date, name, content}) {
+    const side = id % 2 === 0 ? true : false;
   return (
-    <div className="relative flex pt-10 pb-20 mx-auto sm:items-center md:w-2/3">
-        <div className="absolute inset-0 flex items-center justify-center w-6 h-full">
-            <div className="w-1 h-full bg-gray-700 pointer-events-none"></div>
+        <div class="mt-6 w-full sm:mt-0 sm:mb-32">
+        <div class="flex flex-col sm:flex-row items-center">
+        <div class={`flex ${side? 'justify-end': 'justify-start'} w-full mx-auto items-center`}>
+            <div class={`w-full sm:w-1/2 ${side? 'sm:pl-16':'sm:pr-16'}`} >
+            <div class="p-4 border-2 border-gray-900 rounded shadow">
+                <h2 className="text-xl text-gray-300 text-bold">{name}</h2>
+                {content}
+            </div>
+            </div>
         </div>
-        <div className="relative inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mt-10 text-sm font-medium text-white rounded-full sm:mt-0 bg-Primary z-1 title-font">{id}</div>
-        <div className={`flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row`}>
-            <div className={`flex-shrink-0 ${inView? `animate-[wiggle-left_1s_ease-out]` : ``} w-24 h-24 rounded-full border-2 border-gray-700 inline-flex items-center justify-center`}>                   
-                <img className={`h-12 w-12`} src={"/" + img} alt="" />
-            </div>
-            <div className={`flex-grow ${inView? `animate-[fade-in-left_1s_ease-out]` : ``} sm:pl-6 mt-6 sm:mt-0`}>
-                <h2 className="mb-1 text-xl font-medium text-gray-300 title-font">{name}</h2>
-                <p className="leading-relaxed">{content}</p>
-            </div>
+        <div class="rounded-full bg-gray-800 border-2 border-gray-700 w-28 h-28 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            <p className="text-lg text-gray-300">{date}</p>
+        </div>
         </div>
     </div>
   )
