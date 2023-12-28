@@ -3,13 +3,11 @@ import Loader from "../../loaders/Loader";
 
 function PageTitle({sub, title}) {
   return (
-    <div>
-        <div className="space-y-6 text-center justify-center">
-            <p className="text-gray-500 text-xl pt-10">{sub}</p>
-            <p className="font-bold text-white text-5xl">{title}</p>
+        <div className="justify-center mt-8 space-y-6 text-center">
+            <p className="hidden pt-10 text-xl text-gray-500 lg:block">{sub}</p>
+            <p className="text-2xl font-bold text-white lg:text-5xl">{title}</p>
             <Loader />
         </div>
-    </div>
   )
 }
 

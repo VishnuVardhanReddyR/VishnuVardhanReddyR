@@ -7,6 +7,8 @@ import Portfolio from "../components/NavComponents/Portfolio";
 import Contact from "../components/NavComponents/Contact";
 import Footer from "../components/Footer";
 import NavDots from "../components/subComponents/FixedComponents/NavDots";
+import Coursework from '../components/NavComponents/Coursework';
+import Skillset from '../components/NavComponents/Skillset';
 
 export default function Home() {
   return (
@@ -19,7 +21,11 @@ export default function Home() {
       <section id="home">
         <LandingPage />
       </section>
-      <About />
+      <section> 
+        <About />
+      </section>
+      <Coursework />
+      <Skillset />  
       <Resume />
       <Portfolio />
       <Contact />

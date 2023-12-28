@@ -1,7 +1,6 @@
 import React from 'react';
 import useInView from "react-cool-inview";
 import Skill from "./Skill";
-import SubPageTitle from "../ReusableComponents/SubPageTitle";
 
 function MySkills() {
   const { observe, inView} = useInView({
@@ -14,29 +13,22 @@ function MySkills() {
       },
     });
   const Skills = [
-    { name: 'React.js', sub:'', percent: '80%', Progress: 'w-4/5', emoji:'', anime:'animate-fill-80'},
-    { name: 'Next.js', sub:'', percent: '70%', Progress: 'w-3/4', emoji:'', anime:'animate-fill-70'},
-    { name: 'Java', sub:'', percent: '60%', Progress: 'w-3/5', emoji:'', anime:'animate-fill-60'},
-    { name: 'Photoshop', sub:'', percent: '50%', Progress: 'w-1/2', emoji:'', anime:'animate-fill-50'},
-    { name: 'Bash', sub:'', percent: '60%', Progress: 'w-3/5', emoji:'', anime:'animate-fill-60'},
-    { name: 'HTML', sub:'(Programming Language)', percent: '90%', Progress: 'w-11/12', emoji:'😜', anime:'animate-fill-90'}
+    { name: 'React.js', percent: 80, anime:'animate-fill-80'},
+    { name: 'Next.js', percent: 70, anime:'animate-fill-70'},
+    { name: 'Java', percent: 60, anime:'animate-fill-60'},
+    { name: 'Photoshop', percent: 50, anime:'animate-fill-50'},
+    { name: 'Bash', percent: 60, anime:'animate-fill-60'},
+    { name: 'HTML', percent: 90, anime:'animate-fill-90'}
   ]
   return (
     <section ref={observe} className="text-gray-400 body-font">
-      <div className="container px-5 mx-auto">
-        <SubPageTitle
-          title={'My Skills'}
-          inView={inView} 
-        />
-        <div className={`flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4`}>
+      <div className="container items-center justify-center mx-auto">
+        <div className={`grid md:grid-cols-2 lg:grid-cols-3 xl:flex flex-wrap mt-4`}>
           {Skills.map(skill => (
             <Skill
               key={skill.name}
               name={skill.name}
-              sub={skill.sub}
-              emoji={skill.emoji}
-              percent={skill.percent}
-              progress={skill.Progress}
+              percent={skill.percent + '%'}
               anime={skill.anime} 
               inView={inView}
             />
