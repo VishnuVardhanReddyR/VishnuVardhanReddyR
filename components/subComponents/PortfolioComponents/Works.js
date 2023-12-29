@@ -4,21 +4,20 @@ import { myWorks } from "../../../lib/Data";
 
 function Works({ inView }) {
   return (
-    <section className="text-gray-400 body-font">
-        <div className="container px-5 py-24 mx-auto">
+    <section className="w-full text-gray-400 body-font">
+        <div className="relative z-20 flex w-full overflow-x-scroll overflow-y-hidden no-scrollbar snap-x snap-mandatory ">
             {myWorks.map((work, i) => (
                 <Work
                     key={i}
-                    count={i}
+                    count={i + 1}
                     name={work.name}
                     href={work.href}
                     content={work.content}
                     img={work.img}
-                    swap={work.swap}
-                    inView={inView} 
-                    length={myWorks.length-1}
+                    length={myWorks.length}
                 />
             ))}
+
         </div>
     </section>
   )

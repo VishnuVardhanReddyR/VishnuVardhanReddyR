@@ -1,15 +1,11 @@
 import React from 'react';
 
-function WorkInfo({ inView, anime, name, content, href }) {
+function WorkInfo({ name, content, href, count, length }) {
   return (
-    <div className={`${inView? `${anime}`: ``} flex-grow sm:text-left text-center mt-6 sm:mt-0`}>
-        <h2 className="text-gray-300 text-lg title-font font-medium mb-2">{name}</h2>
-        <p className="leading-relaxed text-base">{content}</p>
-        <a href={href} className="mt-3 text-Primary inline-flex items-center">Visit
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-        </a>
+    <div className={`flex-col text-center mx-auto max-w-md items-center justify-center`}>
+        <h2 className="mb-2 text-lg font-medium text-gray-300 title-font">{name}{count}</h2>
+        <p className="text-base leading-relaxed">{content}</p>
+        <p className="mt-2 text-sm font-medium text-gray-400 title-font">{count}/{length}</p>
     </div>
   )
 }

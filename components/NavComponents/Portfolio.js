@@ -23,9 +23,11 @@ function Portfolio() {
     },[inView]);
   
     return (
-    <div id="Portfolio" ref={observe} className="mt-8 px-8 pt-8">
+        <div id="Portfolio" ref={observe} className="relative z-0 flex flex-col items-center h-screen max-w-full mx-auto overflow-hidden text-left justify-evenly">
         <PageTitle title={"Portfolio"} sub={"Showcasing some of my best work"} />
         <Works inView={inView} />
+        <div className="absolute w-full top-[30%] bg-gray-900 left-0 h-[500px] -skew-y-12"></div>
+        <div className="absolute w-full top-[30%] border border-gray-700 left-0 h-[500px] -skew-y-12"></div>
     </div>
   )
 }

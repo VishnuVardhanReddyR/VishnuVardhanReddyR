@@ -2,23 +2,12 @@ import React from 'react';
 import WorkIcon from "./WorkIcon";
 import WorkInfo from "./WorkInfo";
 
-function Work({ count, name, href, content, img, swap, length, inView}) {
+function Work({ count, name, href, content, img, length}) {
   return (
-    <>
-        {!swap ? (
-            <div className={`flex items-center lg:w-3/5 mx-auto ${count < length ? `border-b` : ``} pb-10 mb-10 border-gray-700 sm:flex-row flex-col`}>
-                <WorkIcon inView={inView} anime={'animate-fade-in-right-2'} img={img} href={href} border={'border-l-2'} />
-                <WorkInfo inView={inView} anime={'animate-fade-in-left-2'} name={name} content={content} href={href} />
-            </div>
-        ) : (
-            <div className={`flex items-center lg:w-3/5 mx-auto ${count < length ? `border-b` : ``} pb-10 mb-10 border-gray-700 sm:flex-row flex-col-reverse`}>
-                <WorkInfo inView={inView} anime={'animate-fade-in-right-2'} name={name} content={content} href={href} />
-                <WorkIcon inView={inView} anime={'animate-fade-in-left-2'} img={img} href={href} border={'border-r-2'} />
-            </div> 
-
-        )
-        }
-    </>    
+    <div className="flex flex-col items-center justify-center flex-shrink-0 w-screen h-screen md:h-1/2 md:space-y-8 md:p-44 snap-center">
+        <WorkIcon img={img} href={href} border={'border-l-2'} />
+        <WorkInfo name={name} content={content} href={href} count={count} length={length} />
+    </div>   
   )
 }
 
