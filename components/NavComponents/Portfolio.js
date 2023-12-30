@@ -23,11 +23,12 @@ function Portfolio() {
     },[inView]);
   
     return (
-        <div id="Portfolio" ref={observe} className="relative z-0 flex flex-col items-center h-screen max-w-full mx-auto overflow-hidden text-left justify-evenly">
+    <div id="Portfolio" ref={observe} className="relative z-0 flex flex-col items-center h-screen max-w-full mx-auto overflow-hidden text-left justify-evenly">
         <PageTitle title={"Portfolio"} sub={"Showcasing some of my best work"} />
         <Works inView={inView} />
-        <div className="absolute w-full top-[30%] bg-gray-900 left-0 h-[500px] -skew-y-12"></div>
-        <div className="absolute w-full top-[30%] border border-gray-700 left-0 h-[500px] -skew-y-12"></div>
+        <div className="absolute w-[500px] h-[500px] top-[30%] rounded-full border-b-2 border-gray-700 opacity-50  -skew-y-12"></div>
+        <div className="absolute w-[550px] h-[550px] top-[30%] rounded-full border-t-[100px] bg-slate-800 border-gray-900 opacity-40 -skew-y-12"></div>
+        <div className="absolute w-1/2 h-[700px] top-[30%] rounded-full border-x-4 border-gray-900 -skew-y-12"></div>
     </div>
   )
 }
