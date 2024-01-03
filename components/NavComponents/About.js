@@ -8,7 +8,7 @@ import PageTitle from "../subComponents/ReusableComponents/PageTitle";
 
 function About() {
   const[ aboutOpen, setAboutOpen ] = useRecoilState(aboutState);
-
+  console.log('Sanity Studio is running in the %s API version', process.env.NEXT_PUBLIC_SANITY_DATASET);
   const { observe, inView} = useInView({
     threshold: 0.25,
     onChange: ({ observe }) => {
