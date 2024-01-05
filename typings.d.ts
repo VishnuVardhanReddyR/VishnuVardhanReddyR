@@ -22,3 +22,18 @@ export interface Portfolios extends SanityBody {
     description: string;
     image: Image;
 }
+export interface AboutAuthor extends SanityBody {
+    _type: 'about';
+    title: string;
+    description: string;
+    image: Image;
+    Contact: Contacts;
+}
+
+export interface Contacts extends SanityBody {
+    _type: 'contact';
+    name: string;
+    address: string;
+    email: email;
+    mapLocation: url;
+}

@@ -5,11 +5,11 @@ import { portfolioState } from "../../Atoms/portfolioAtom";
 import PageTitle from "../subComponents/ReusableComponents/PageTitle";
 import Works from "../subComponents/PortfolioComponents/Works";
 import { Portfolios } from "../../typings";
-import { myWorks } from '../../lib/Data';
 
 type Props = {
     portfolio: Portfolios[];
 }
+
 function Portfolio({ portfolio}: Props) {
     const[ portfolioOpen, setPortfolioOpen ] = useRecoilState(portfolioState);
 
