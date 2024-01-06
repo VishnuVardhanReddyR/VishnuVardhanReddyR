@@ -31,8 +31,12 @@
     "pages/index.tsx",
     "pages/_app.tsx",
     "sanity/schemas/portfolio.js",
-    ".next/types/**/*.ts"
-, "src/app/studio/[[...index]]/page.js", "pages/index.tsx", "components/Header.js", "components/subComponents/ReusableComponents/Logo.js"  ],
+    ".next/types/**/*.ts", 
+    "src/app/studio/[[...index]]/page.js", 
+    "pages/index.tsx", 
+    "components/Header.js", 
+    "components/subComponents/ReusableComponents/Logo.js",  
+],
   "exclude": [
     "node_modules"
   ]

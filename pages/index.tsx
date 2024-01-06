@@ -10,18 +10,20 @@ import Footer from "../components/Footer";
 import NavDots from "../components/subComponents/FixedComponents/NavDots";
 import Coursework from '../components/NavComponents/Coursework';
 import Skillset from '../components/NavComponents/Skillset';
-import { AboutAuthor, CourseWorks, Portfolios } from '../typings';
+import { AboutAuthor, CourseWorks, Portfolios, Skills } from '../typings';
 import { getPortfolio } from '../utils/fetchPortfolio';
 import { getAbout } from '../utils/fetchAbout';
 import { getCoursework } from '../utils/fetchCoursework';
+import { getSkills } from '../utils/fetchSkills';
 
 type Props = {
   portfolio: Portfolios[]; 
   about: AboutAuthor[];
   coursework: CourseWorks[];
+  skills: Skills[];
 };
 
-const Home = ({portfolio, about, coursework }: Props) => {
+const Home = ({portfolio, about, coursework, skills }: Props) => {
   return (
     <div className="h-screen overflow-y-scroll bg-black caret-inherit max-w-screen scrollbar-hide scroll-smooth">
       <Head>
@@ -41,7 +43,7 @@ const Home = ({portfolio, about, coursework }: Props) => {
       {/* @ts-expect-error async server component */}
       <Coursework coursework={coursework} />
       {/* @ts-expect-error async server component */}
-      <Skillset />  
+      <Skillset skills={skills} />  
       {/* @ts-expect-error async server component */}
       <Resume />
       {/* @ts-expect-error async server component */}
@@ -62,12 +64,14 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const portfolio: Portfolios[] = await getPortfolio();
   const about: AboutAuthor[] = await getAbout();
   const coursework: CourseWorks[] = await getCoursework();
+  const skills: Skills[] = await getSkills();
 
   return {
     props: {
       portfolio,
       about,
       coursework,
+      skills,
     },
     revalidate: 10,
   };

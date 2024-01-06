@@ -52,7 +52,7 @@ export interface resumes extends SanityBody {
     description: text;
     date: string;
 }
-export interface skills extends SanityBody {
+export interface Skills extends SanityBody {
     _type: 'skill';
     title: string;
     percentage: number;
