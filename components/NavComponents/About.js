@@ -3,13 +3,10 @@ import { useRecoilState } from "recoil";
 import { aboutState } from "../../Atoms/aboutAtom";
 import MyOverview from "../subComponents/AboutComponents/MyOverview";
 import PageTitle from "../subComponents/ReusableComponents/PageTitle";
-import { AboutAuthor } from "../../typings";
+import { urlFor } from "../../sanity";
 
-type Props = {
-  about: AboutAuthor[];
-}
-
-function About({ about}: Props) {
+function About({about}) {
+  const { title, description, image, contact } = about[0];
   const[ aboutOpen, setAboutOpen ] = useRecoilState(aboutState);
 
   return (
@@ -17,7 +14,14 @@ function About({ about}: Props) {
           {/* @ts-expect-error async server component */}
           <PageTitle title={'About Me'} sub={'Get to know me'} />
           {/* @ts-expect-error async server component */}
-          <MyOverview about={about[0]}/>
+          <MyOverview 
+            image={urlFor(image).url()}
+            title={title}
+            description={description}
+            name={contact[0]?.name}
+            email={contact[0]?.email}
+            address={contact[0]?.address}
+          />
     </section>
   )
 }

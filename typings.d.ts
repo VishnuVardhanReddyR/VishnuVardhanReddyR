@@ -27,7 +27,7 @@ export interface AboutAuthor extends SanityBody {
     title: string;
     description: string;
     image: Image;
-    Contact: Contacts;
+    Contact: Contacts[];
 }
 
 export interface Contacts extends SanityBody {

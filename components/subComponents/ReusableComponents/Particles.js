@@ -7,7 +7,6 @@ const ParticlesAnime = () => {
       };
     
       const particlesLoaded = (container) => {
-        console.log(container);
       };
   return (
       <Particles

@@ -7,9 +7,6 @@ import MapCard from "../subComponents/ContactComponents/MapCard";
 import ContactForm from "../subComponents/ContactComponents/ContactForm";
 
 const Contact = ({contact}) => {
-    console.log(contact);
-
-    
 
 return (
     <div id="Contact" className="px-8 mt-20 -translate-y-32 ">

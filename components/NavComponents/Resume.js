@@ -8,7 +8,7 @@ import { resumeData } from "../../lib/Data";
 import { motion } from "framer-motion";
 
 const Resume = ({resume}) => {
-  console.log(resume);
+  
   const [ resumeOpen, setResumeOpen ] = useRecoilState(resumeState);
 
     const { observe, inView} = useInView({
