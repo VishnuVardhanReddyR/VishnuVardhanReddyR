@@ -9,26 +9,15 @@ export default {
       type: 'string',
     },
     {
-      name: 'graduationCourses',
-      title: 'Graduation Courses',
+      name: 'Courses',
+      title: 'Courses',
       type: 'array',
       of: [{ 
         type:"reference", 
         to: {
-          type: 'graduationCoursework'
+          type: 'Courses'
         }
       }],
-    },  
-    {
-      name: 'underGraduationCourses',
-      title: 'Under-Graduation Courses',
-      type: 'array',
-      of: [{ 
-        type:"reference", 
-        to: {
-          type: 'underGraduationCoursework'
-        }
-      }],
-    },  
+    },    
   ],
 }

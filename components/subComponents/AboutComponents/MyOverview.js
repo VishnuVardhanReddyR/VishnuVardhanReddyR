@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { urlFor } from '../../../sanity';
 
 function MyOverview({about}) {
-  console.log(about);
   let name = "Vishnu Vardhan Reddy Rapuru";
   let email = "vishnurapuru10@gmail.com";
   let address = "Hyderabad, India";
@@ -26,7 +25,7 @@ function MyOverview({about}) {
               <h2 className="text-xs font-semibold tracking-widest text-white title-font">NAME</h2>
               <p className="mt-1">{about.contact[0].name}</p>
               <h2 className="text-xs font-semibold tracking-widest text-white title-font lg:mt-2">EMAIL</h2>
-              <a href="mailto:vishnurapuru10@gmail.com" className="leading-relaxed text-Primary">{email}</a>
+              <a href="mailto:vishnurapuru10@gmail.com" className="leading-relaxed text-Primary">{about.email}</a>
             </div>
             <div className="px-6 mt-4 lg:w-1/2 lg:mt-0">
               <h2 className="text-xs font-semibold tracking-widest text-white title-font">From</h2>

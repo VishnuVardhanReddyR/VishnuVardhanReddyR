@@ -37,3 +37,24 @@ export interface Contacts extends SanityBody {
     email: email;
     mapLocation: url;
 }
+export interface CourseWorks extends SanityBody {
+    _type: 'coursework';
+    title: string;
+    courses: courses[];
+}
+export interface courses extends SanityBody {
+    _type: 'courses';
+    course: string;
+}
+export interface resumes extends SanityBody {
+    _type: 'resume';
+    title: string;
+    description: text;
+    date: string;
+}
+export interface skills extends SanityBody {
+    _type: 'skill';
+    title: string;
+    percentage: number;
+}
+

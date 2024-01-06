@@ -10,7 +10,6 @@ type Props = {
 }
 
 function About({ about}: Props) {
-  console.log(about);
   const[ aboutOpen, setAboutOpen ] = useRecoilState(aboutState);
 
   return (

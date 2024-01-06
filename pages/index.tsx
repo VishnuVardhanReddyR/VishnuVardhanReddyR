@@ -10,16 +10,18 @@ import Footer from "../components/Footer";
 import NavDots from "../components/subComponents/FixedComponents/NavDots";
 import Coursework from '../components/NavComponents/Coursework';
 import Skillset from '../components/NavComponents/Skillset';
-import { AboutAuthor, Portfolios } from '../typings';
+import { AboutAuthor, CourseWorks, Portfolios } from '../typings';
 import { getPortfolio } from '../utils/fetchPortfolio';
 import { getAbout } from '../utils/fetchAbout';
+import { getCoursework } from '../utils/fetchCoursework';
 
 type Props = {
   portfolio: Portfolios[]; 
   about: AboutAuthor[];
+  coursework: CourseWorks[];
 };
 
-const Home = ({portfolio, about }: Props) => {
+const Home = ({portfolio, about, coursework }: Props) => {
   return (
     <div className="h-screen overflow-y-scroll bg-black caret-inherit max-w-screen scrollbar-hide scroll-smooth">
       <Head>
@@ -37,7 +39,7 @@ const Home = ({portfolio, about }: Props) => {
         <About about={about} />
       </section>
       {/* @ts-expect-error async server component */}
-      <Coursework />
+      <Coursework coursework={coursework} />
       {/* @ts-expect-error async server component */}
       <Skillset />  
       {/* @ts-expect-error async server component */}
@@ -59,11 +61,13 @@ export default Home;
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const portfolio: Portfolios[] = await getPortfolio();
   const about: AboutAuthor[] = await getAbout();
+  const coursework: CourseWorks[] = await getCoursework();
 
   return {
     props: {
       portfolio,
       about,
+      coursework,
     },
     revalidate: 10,
   };
