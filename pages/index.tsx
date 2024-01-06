@@ -10,20 +10,22 @@ import Footer from "../components/Footer";
 import NavDots from "../components/subComponents/FixedComponents/NavDots";
 import Coursework from '../components/NavComponents/Coursework';
 import Skillset from '../components/NavComponents/Skillset';
-import { AboutAuthor, CourseWorks, Portfolios, Skills } from '../typings';
+import { AboutAuthor, CourseWorks, Portfolios, Resumes, Skills } from '../typings';
 import { getPortfolio } from '../utils/fetchPortfolio';
 import { getAbout } from '../utils/fetchAbout';
 import { getCoursework } from '../utils/fetchCoursework';
 import { getSkills } from '../utils/fetchSkills';
+import { getResume } from '../utils/fetchResume';
 
 type Props = {
   portfolio: Portfolios[]; 
   about: AboutAuthor[];
   coursework: CourseWorks[];
   skills: Skills[];
+  resume: Resumes[];
 };
 
-const Home = ({portfolio, about, coursework, skills }: Props) => {
+const Home = ({portfolio, about, coursework, skills, resume }: Props) => {
   return (
     <div className="h-screen overflow-y-scroll bg-black caret-inherit max-w-screen scrollbar-hide scroll-smooth">
       <Head>
@@ -45,7 +47,7 @@ const Home = ({portfolio, about, coursework, skills }: Props) => {
       {/* @ts-expect-error async server component */}
       <Skillset skills={skills} />  
       {/* @ts-expect-error async server component */}
-      <Resume />
+      <Resume resume={resume} />
       {/* @ts-expect-error async server component */}
       <Portfolio portfolio={portfolio} />
       {/* @ts-expect-error async server component */}
@@ -65,6 +67,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const about: AboutAuthor[] = await getAbout();
   const coursework: CourseWorks[] = await getCoursework();
   const skills: Skills[] = await getSkills();
+  const resume: Resumes[] = await getResume();
 
   return {
     props: {
@@ -72,6 +75,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       about,
       coursework,
       skills,
+      resume,
     },
     revalidate: 10,
   };

@@ -46,7 +46,7 @@ export interface courses extends SanityBody {
     _type: 'courses';
     course: string;
 }
-export interface resumes extends SanityBody {
+export interface Resumes extends SanityBody {
     _type: 'resume';
     title: string;
     description: text;

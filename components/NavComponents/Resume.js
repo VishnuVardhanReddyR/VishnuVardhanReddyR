@@ -7,7 +7,8 @@ import PageTitle from "../subComponents/ReusableComponents/PageTitle";
 import { resumeData } from "../../lib/Data";
 import { motion } from "framer-motion";
 
-function Resume() {
+const Resume = ({resume}) => {
+  console.log(resume);
   const [ resumeOpen, setResumeOpen ] = useRecoilState(resumeState);
 
     const { observe, inView} = useInView({
@@ -25,7 +26,7 @@ function Resume() {
     },[inView]);
   
     return (
-      <div id="Resume" className="px-4 pt-8 mt-8" ref={observe}>
+      <div id="Resume" className="px-4 pt-8 mt-8">
         <div className="container flex flex-col items-start mx-auto my-12 md:flex-row md:my-24">
           <div className="sticky top-70% flex flex-col w-full px-8 mt-2 md:top-36 lg:w-1/3 md:mt-12 mb-24">
             <PageTitle title={'Resume'} sub={'have a brief at my achievements'} />
@@ -36,12 +37,12 @@ function Resume() {
               <div class="relative w-full text-gray-500 antialiased text-sm font-semibold">
 
                 <div class="hidden sm:block w-1 bg-gray-600 absolute h-full left-1/2 transform -translate-x-1/2"></div>
-                {resumeData.map((data,i) => (
+                {resume.map((data,i) => (
                 <ResumeCard
-                  key={i}
+                  key={data._id}
                   id={i+1}
-                  name={data.name}
-                  content={data.content} 
+                  name={data.title}
+                  content={data.description} 
                   date={data.date}
                 />
               ))}
