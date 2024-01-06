@@ -10,13 +10,14 @@ import Footer from "../components/Footer";
 import NavDots from "../components/subComponents/FixedComponents/NavDots";
 import Coursework from '../components/NavComponents/Coursework';
 import Skillset from '../components/NavComponents/Skillset';
-import { AboutAuthor, CourseWorks, Portfolios, Resumes, Skills, Contacts } from '../typings';
+import { AboutAuthor, CourseWorks, Portfolios, Resumes, Skills, Contacts, Introduction } from '../typings';
 import { getPortfolio } from '../utils/fetchPortfolio';
 import { getAbout } from '../utils/fetchAbout';
 import { getCoursework } from '../utils/fetchCoursework';
 import { getSkills } from '../utils/fetchSkills';
 import { getResume } from '../utils/fetchResume';
 import { getContact } from '../utils/fetchContact';
+import { getIntro } from '../utils/fetchIntro';
 
 type Props = {
   portfolio: Portfolios[]; 
@@ -25,9 +26,10 @@ type Props = {
   skills: Skills[];
   resume: Resumes[];
   contact: Contacts[];
+  intro: Introduction[];
 };
 
-const Home = ({portfolio, about, coursework, skills, resume, contact }: Props) => {
+const Home = ({portfolio, about, coursework, skills, resume, contact, intro }: Props) => {
   return (
     <div className="h-screen overflow-y-scroll bg-black caret-inherit max-w-screen scrollbar-hide scroll-smooth">
       <Head>
@@ -38,7 +40,7 @@ const Home = ({portfolio, about, coursework, skills, resume, contact }: Props) =
       <Header />
       <section id="home">
       {/* @ts-expect-error async server component */}
-        <LandingPage />
+        <LandingPage intro={intro} />
       </section>
       <section>
       {/* @ts-expect-error async server component */}
@@ -71,6 +73,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const skills: Skills[] = await getSkills();
   const resume: Resumes[] = await getResume();
   const contact: Contacts[] = await getContact();
+  const intro: Introduction[] = await getIntro();
 
   return {
     props: {
@@ -80,6 +83,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       skills,
       resume,
       contact,
+      intro,
     },
     revalidate: 10,
   };

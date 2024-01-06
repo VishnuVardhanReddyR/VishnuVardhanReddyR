@@ -57,4 +57,15 @@ export interface Skills extends SanityBody {
     title: string;
     percentage: number;
 }
+export interface Introduction extends SanityBody {
+    _type: 'intro';
+    title: string;
+    image: Image;
+    typingTitle: typing[];
+}
+
+export interface typing extends SanityBody {
+    _type: 'typing';
+    title: string;
+}
 
