@@ -2,10 +2,10 @@ import React from 'react'
 import PageTitle from "../subComponents/ReusableComponents/PageTitle";
 import Courses from '../subComponents/CourseworkComponents/Courses';
 
-const Coursework = ({coursework}) => {
+const Coursework = ({coursework, titles}) => {
   return (
     <div className="h-screen px-6">
-        <PageTitle title={'Coursework'} sub={'here is my'} />
+        <PageTitle title={titles.title} sub={titles.sub} />
         <Courses coursework={coursework} />
     </div>
   )

@@ -68,4 +68,14 @@ export interface typing extends SanityBody {
     _type: 'typing';
     title: string;
 }
+export interface Socials extends SanityBody {
+    _type: 'socials';
+    socialMediaName: string;
+    url: url;
+}
+export interface Titles extends SanityBody {
+    _type: 'titles';
+    title: string;
+    sub: string;
+}
 

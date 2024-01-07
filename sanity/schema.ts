@@ -8,6 +8,8 @@ import resume from './schemas/resume';
 import skill from './schemas/skill';
 import intro from './schemas/intro';
 import typing from './schemas/typing';
+import socials from './schemas/socials';
+import titles from './schemas/titles';
 
 console.log("sanity.ts", process.env.NEXT_PUBLIC_SANITY_PROJECT_ID);
 
@@ -22,5 +24,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     portfolio, 
     resume, 
     skill, 
+    socials,
+    titles,
   ],
 }

@@ -4,13 +4,8 @@ import useInView from "react-cool-inview";
 import { portfolioState } from "../../Atoms/portfolioAtom";
 import PageTitle from "../subComponents/ReusableComponents/PageTitle";
 import Works from "../subComponents/PortfolioComponents/Works";
-import { Portfolios } from "../../typings";
 
-type Props = {
-    portfolio: Portfolios[];
-}
-
-function Portfolio({ portfolio}: Props) {
+function Portfolio({ portfolio, titles}) {
     const[ portfolioOpen, setPortfolioOpen ] = useRecoilState(portfolioState);
 
     const { observe, inView} = useInView({
@@ -30,7 +25,7 @@ function Portfolio({ portfolio}: Props) {
     return (
     <div id="Portfolio" ref={observe} className="relative z-0 flex flex-col items-center h-screen max-w-full mx-auto overflow-hidden text-left justify-evenly">
       {/* @ts-expect-error async server component */}
-        <PageTitle title={"Portfolio"} sub={"Showcasing some of my best work"} />
+        <PageTitle title={titles.title} sub={titles.sub} />
       {/* @ts-expect-error async server component */} 
         <Works myWorks={portfolio} />
         <div className="absolute w-[550px] h-[550px] top-[30%] rounded-full border-t-[100px] bg-slate-800 border-gray-900 opacity-40 -skew-y-12"></div>

@@ -35,7 +35,7 @@
     "src/app/studio/[[...index]]/page.js", 
     "pages/index.tsx", 
     "components/Header.js", 
-    "components/subComponents/ReusableComponents/Logo.js",  
+    "components/subComponents/ReusableComponents/Logo.js", "components/NavComponents/Portfolio.js",  
 ],
   "exclude": [
     "node_modules"
