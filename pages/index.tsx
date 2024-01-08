@@ -36,35 +36,53 @@ type Props = {
 const Home = ({portfolio, about, coursework, skills, resume, contact, intro, socials, titles }: Props) => {
   console.log("titles", titles);
   return (
-    <div className="h-screen overflow-y-scroll bg-black caret-inherit max-w-screen scrollbar-hide scroll-smooth">
+    <div className="h-screen overflow-y-scroll bg-black snap-y snap-mandatory caret-inherit max-w-screen scrollbar-hide scroll-smooth">
       <Head>
-        <title>Vishnu Vardhan Reddy R</title>
+        <title>Vishnu Rapuru</title>
         <link rel="icon" href="/VR-logo.png" />
       </Head>
+
       {/* @ts-expect-error async server component */}
       <Header socials={socials} />
-      <section id="home">
-      {/* @ts-expect-error async server component */}
+      
+      <section id="home" className="snap-start">
+        {/* @ts-expect-error async server component */}
         <LandingPage intro={intro} />
       </section>
-      <section>
-      {/* @ts-expect-error async server component */}
+      
+      <section className="snap-center" >
+        {/* @ts-expect-error async server component */}
         <About about={about} titles={titles[2]} />
       </section>
-      {/* @ts-expect-error async server component */}
-      <Coursework coursework={coursework} titles={titles[1]} />
-      {/* @ts-expect-error async server component */}
-      <Skillset skills={skills} titles={titles[4]} />  
-      {/* @ts-expect-error async server component */}
-      <Resume resume={resume} titles={titles[3]} />
-      {/* @ts-expect-error async server component */}
-      <Portfolio portfolio={portfolio} titles={titles[5]} />
-      {/* @ts-expect-error async server component */}
-      <Contact contact={contact} titles={titles[0]} />
+      
+      <section className="snap-center" >
+        {/* @ts-expect-error async server component */}
+        <Coursework coursework={coursework} titles={titles[1]} />
+      </section>
+      
+      <section className="snap-center">
+        {/* @ts-expect-error async server component */}
+        <Skillset skills={skills} titles={titles[4]} />  
+      </section>
+      
+      <section className="snap-start">
+        {/* @ts-expect-error async server component */}
+        <Resume resume={resume} titles={titles[3]} />
+      </section>
+      
+      <section className="snap-start">
+        {/* @ts-expect-error async server component */}
+        <Portfolio portfolio={portfolio} titles={titles[5]} />
+      </section>
+      
+      <section className="snap-start">
+        {/* @ts-expect-error async server component */}
+        <Contact contact={contact} titles={titles[0]} />
+      </section>
+      
       {/* @ts-expect-error async server component */}
       <Footer />
-      {/* @ts-expect-error async server component */}
-      <NavDots />
+
     </div>
   )
 }
