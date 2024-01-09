@@ -7,7 +7,7 @@ function About({about, titles}) {
   const { title, description, image, contact } = about[0];
 
   return (
-    <div className="relative items-center justify-center w-full h-2/3">
+    <div className="relative items-center justify-center w-full h-screen p-4">
           <PageTitle title={titles.title} sub={titles.sub} />
           <MyOverview 
             image={urlFor(image).url()}

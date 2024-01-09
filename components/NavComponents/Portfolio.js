@@ -23,13 +23,14 @@ function Portfolio({ portfolio, titles}) {
     },[inView]);
   
     return (
-    <div id="Portfolio" ref={observe} className="relative z-0 flex flex-col items-center h-screen max-w-full mx-auto overflow-hidden text-left justify-evenly">
+      <div className='relative z-0 h-screen p-4'>
+    {/* <div id="Portfolio" className="relative z-0 flex flex-col items-center justify-center h-screen max-w-full pt-6 mx-auto overflow-hidden text-left"> */}
       {/* @ts-expect-error async server component */}
         <PageTitle title={titles.title} sub={titles.sub} />
       {/* @ts-expect-error async server component */} 
         <Works myWorks={portfolio} />
-        <div className="absolute w-[550px] h-[550px] top-[30%] rounded-full border-t-[100px] bg-slate-800 border-gray-900 opacity-40 -skew-y-12"></div>
-        <div className="absolute w-1/2 h-[700px] top-[30%] rounded-full border-x-4 border-gray-900 -skew-y-12"></div>
+        <div className="absolute w-full h-[500px] top-[30%] border-y-4 border-gray-800 opacity-40 -skew-y-12"></div>
+        <div className="md:absolute hidden w-1/2 h-[700px] top-[30%] rounded-full border-x-4 border-gray-900 -skew-y-12"></div>
     </div>
   )
 }

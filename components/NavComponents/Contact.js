@@ -9,7 +9,7 @@ import ContactForm from "../subComponents/ContactComponents/ContactForm";
 const Contact = ({contact, titles}) => {
 
 return (
-    <div id="Contact" className="px-8 mt-20 -translate-y-32 ">
+    <div id="Contact" className="h-screen p-8">
         <PageTitle title={titles.title} sub={titles.sub} />
         <section className="relative text-gray-400 body-font">
             <div className="container flex flex-wrap h-full px-5 mx-auto sm:flex-nowrap">

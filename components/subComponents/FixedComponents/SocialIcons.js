@@ -11,7 +11,7 @@ function SocialIcons({socials}) {
         transition={{ duration: 1.5 }}
          className="flex flex-row items-center">
                 {socials.map((icon) => (
-                        <SocialIcon url={icon.url} className='w-2 h-2 mr-4' fgColor='gray' bgColor='transparent' />
+                        <SocialIcon url={icon.url} className='w-2 h-2 mr-[1px] md:mr-4' fgColor='gray' bgColor='transparent' />
                 ))}
         </motion.div>
   );

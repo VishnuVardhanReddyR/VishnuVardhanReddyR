@@ -45,7 +45,7 @@ const Home = ({portfolio, about, coursework, skills, resume, contact, intro, soc
       {/* @ts-expect-error async server component */}
       <Header socials={socials} />
       
-      <section id="home" className="snap-start">
+      <section id="home" className="snap-center">
         {/* @ts-expect-error async server component */}
         <LandingPage intro={intro} />
       </section>
@@ -65,23 +65,23 @@ const Home = ({portfolio, about, coursework, skills, resume, contact, intro, soc
         <Skillset skills={skills} titles={titles[4]} />  
       </section>
       
-      <section className="snap-start">
+      <section className="snap-center">
         {/* @ts-expect-error async server component */}
         <Resume resume={resume} titles={titles[3]} />
       </section>
       
-      <section className="snap-start">
+      <section className="snap-center">
         {/* @ts-expect-error async server component */}
         <Portfolio portfolio={portfolio} titles={titles[5]} />
       </section>
       
-      <section className="snap-start">
+      <section className="snap-center">
         {/* @ts-expect-error async server component */}
         <Contact contact={contact} titles={titles[0]} />
+        {/* @ts-expect-error async server component */}
+        <Footer socials={socials} />
       </section>
       
-      {/* @ts-expect-error async server component */}
-      <Footer />
 
     </div>
   )

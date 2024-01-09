@@ -5,7 +5,7 @@ import { contactFields } from "../../../lib/Data";
 
 function ContactForm() {
   let title = "Message Me",
-      text = "Always Available for freelance work if the right project comes along, Feel free to contact me!",
+      text = "Always Available, feel free to contact me!",
       buttonLabel = "Send Message",
       note = "Work under Progress, Feel free to use E-mail to contact me.";
 

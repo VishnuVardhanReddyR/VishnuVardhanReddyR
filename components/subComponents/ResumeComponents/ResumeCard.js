@@ -8,7 +8,7 @@ function ResumeCard({ id, date, name, content}) {
         <div class={`flex ${side? 'justify-end': 'justify-start'} w-full mx-auto items-center`}>
             <div class={`w-full sm:w-1/2 ${side? 'lg:pl-16':'lg:pr-16'}`} >
             <div class="p-4 border-2 border-gray-900 rounded shadow">
-                <h2 className="pt-4 text-xl text-center text-gray-300 lg:pt-0 lg:text-start text-bold">{name}</h2>
+                <h2 className="pt-8 text-center text-gray-300 text-md md:text-lg lg:pt-0 lg:text-start text-bold">{name}</h2>
                 {content}
             </div>
             </div>

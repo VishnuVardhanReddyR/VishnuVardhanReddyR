@@ -26,15 +26,15 @@ const Resume = ({resume, titles}) => {
     },[inView]);
   
     return (
-      <div id="Resume" className="px-4 pt-8 mt-8">
-        <div className="container flex flex-col items-start mx-auto my-12 md:flex-row md:my-24">
-          <div className="sticky top-70% flex flex-col w-full px-8 mt-2 md:top-36 lg:w-1/3 md:mt-12 mb-24">
+      <div id="Resume" className="h-screen px-4">
+        <div className="container flex flex-col items-start mx-auto md:flex-row">
+          <div className="sticky md:top-70% w-full px-8 md:top-36 lg:w-1/3 md:mt-12 mb-24">
             <PageTitle title={titles.title} sub={titles.sub} />
           </div>
-          <div class="min-h-screen w-3/4 py-6 mx-auto flex flex-col justify-center sm:py-12">
-            <div class="py-3 sm:w-full sm:mx-auto w-full px-2 sm:px-4">
+          <div class="md:min-h-screen w-3/4 mx-auto flex flex-col justify-center">
+            <div class="sm:w-full sm:mx-auto w-full px-2 sm:px-4">
 
-              <div class="relative w-full text-gray-500 antialiased text-sm font-semibold">
+              <div class="relative w-full text-gray-500 antialiased text-sm h-full font-semibold">
 
                 <div class="hidden sm:block w-1 bg-gray-600 absolute h-full left-1/2 transform -translate-x-1/2"></div>
                 {resume.map((data,i) => (

@@ -5,7 +5,7 @@ function PageTitle({sub, title}) {
   return (
         <div className="mt-32 space-y-6 text-center">
             <p className="hidden pt-10 text-xl text-gray-500 lg:block">{sub}</p>
-            <p className="text-2xl font-bold text-white lg:text-5xl">{title}</p>
+            <p className="text-md uppercase text-gray-300 tracking-[8px]">{title}</p>
             <Loader />
         </div>
   )

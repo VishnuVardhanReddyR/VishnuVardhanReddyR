@@ -4,7 +4,7 @@ import MySkills from '../subComponents/ResumeComponents/MySkills';
 
 const Skillset = ({skills, titles}) => {
   return (
-    <div className="h-screen px-6 my-48 space-y-8">
+    <div className="h-screen p-6 space-y-4">
         <PageTitle title={titles.title} sub={titles.sub} />  
         <MySkills skills={skills} />
     </div>
