@@ -34,7 +34,11 @@ const Resume = ({resume, titles}) => {
           <div class="md:min-h-screen w-3/4 mx-auto flex flex-col justify-center">
             <div class="sm:w-full sm:mx-auto w-full px-2 sm:px-4">
 
-              <div class="relative w-full text-gray-500 antialiased text-sm h-full font-semibold">
+              <motion.div
+                initial={{ opacity: 0, x: 200 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                class="relative w-full text-gray-500 antialiased text-sm h-full font-semibold">
 
                 <div class="hidden sm:block w-1 bg-gray-600 absolute h-full left-1/2 transform -translate-x-1/2"></div>
                 {resume.map((data,i) => (
@@ -46,7 +50,7 @@ const Resume = ({resume, titles}) => {
                   date={data.date}
                 />
               ))}
-              </div>
+              </motion.div>
 
             </div>
           </div>

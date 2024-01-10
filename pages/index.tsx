@@ -62,6 +62,11 @@ const Home = ({portfolio, about, coursework, skills, resume, contact, intro, soc
       
       <section className="snap-center">
         {/* @ts-expect-error async server component */}
+        <Portfolio portfolio={portfolio} titles={titles[5]} />
+      </section>
+      
+      <section className="snap-center">
+        {/* @ts-expect-error async server component */}
         <Skillset skills={skills} titles={titles[4]} />  
       </section>
       
@@ -70,10 +75,6 @@ const Home = ({portfolio, about, coursework, skills, resume, contact, intro, soc
         <Resume resume={resume} titles={titles[3]} />
       </section>
       
-      <section className="snap-center">
-        {/* @ts-expect-error async server component */}
-        <Portfolio portfolio={portfolio} titles={titles[5]} />
-      </section>
       
       <section className="snap-center">
         {/* @ts-expect-error async server component */}

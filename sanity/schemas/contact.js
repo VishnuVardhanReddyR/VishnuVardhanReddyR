@@ -9,6 +9,16 @@ export default {
       type: 'string',
     },
     {
+      name: 'nameLabel',
+      title: 'Name Label',
+      type: 'string',
+    },
+    {
+      name: 'addressLabel',
+      title: 'Address Label',
+      type: 'string',
+    },
+    {
       name: 'address',
       title: 'Address',
       type: 'string',
@@ -19,9 +29,34 @@ export default {
       type: 'email',
     },
     {
+      name: 'emailLabel',
+      title: 'Email Label',
+      type: 'string',
+    },
+    {
+      name: 'messageLabel',
+      title: 'Message Label',
+      type: 'string',
+    },
+    {
       name: 'mapLocation',
       title: 'Map Location',
       type: 'url',
+    },
+    {
+      name: 'contactTitle',
+      title: 'Contact Title',
+      type: 'string',
+    },
+    {
+      name: 'contactSub',
+      title: 'Contact Sub',
+      type: 'string',
+    },
+    {
+      name: 'contactNote',
+      title: 'Contact Note',
+      type: 'string',
     },
   ],
 }

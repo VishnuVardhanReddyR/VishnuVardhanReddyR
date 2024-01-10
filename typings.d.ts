@@ -33,9 +33,16 @@ export interface AboutAuthor extends SanityBody {
 export interface Contacts extends SanityBody {
     _type: 'contact';
     name: string;
+    nameLabel: string;
     address: string;
+    addressLabel: string;
     email: email;
+    emailLabel: string;
+    messageLabel: string;
     mapLocation: url;
+    contactTitle: string;
+    contactSub: string;
+    contactNote: string;
 }
 export interface CourseWorks extends SanityBody {
     _type: 'coursework';
