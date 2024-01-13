@@ -1,11 +1,10 @@
 import React from 'react';
 import ContactInput from "./ContactInput";
 import ContactTextArea from "./ContactTextArea";
-import { contactFields } from "../../../lib/Data";
 import { motion } from 'framer-motion';
 
 function ContactForm({ contact }) {
-  const { nameLabel, emailLabel, messageLabel, contactTitle, contactSub, contactNote } = contactFields;
+  const { nameLabel, emailLabel, messageLabel, contactTitle, contactSub, contactNote } = contact[0];
   
   return (
     <motion.div

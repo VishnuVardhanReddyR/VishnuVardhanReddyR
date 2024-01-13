@@ -7,7 +7,6 @@ import MapCard from "../subComponents/ContactComponents/MapCard";
 import ContactForm from "../subComponents/ContactComponents/ContactForm";
 
 const Contact = ({contact, titles}) => {
-    const {mapLocation, email, emailLabel, address, addressLabel, nameLabel, contactTitle, contactSub, contactNote, messageLabel } = contact[0];
 return (
     <div id="Contact" className="h-screen p-8">
         <PageTitle title={titles.title} sub={titles.sub} />
