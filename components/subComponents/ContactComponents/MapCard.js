@@ -3,7 +3,6 @@ import MapIframe from "./MapIframe";
 import { motion } from 'framer-motion';
 
 function MapCard({ contact }) {
-  console.log(contact);
   const { mapLocation, email, address, emailLabel, addressLabel } = contact[0];
   return (
     <motion.div

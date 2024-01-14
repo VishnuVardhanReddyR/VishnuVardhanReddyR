@@ -4,6 +4,5 @@ export const getResume = async () => {
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getResume`);
     const data = await res.json();
     const resume: Resumes[] = data.resume;
-    console.log("fetching", resume);
     return resume;
 }

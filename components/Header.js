@@ -1,5 +1,4 @@
 import Logo from "./subComponents/ReusableComponents/Logo";
-import NavLinks from "./subComponents/HeaderComponents/NavLinks";
 import SocialIcons from './subComponents/FixedComponents/SocialIcons';
 
 const Header = ({socials}) => {

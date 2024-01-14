@@ -34,7 +34,7 @@ type Props = {
 };
 
 const Home = ({portfolio, about, coursework, skills, resume, contact, intro, socials, titles }: Props) => {
-  console.log("titles", titles);
+
   return (
     <div className="h-screen overflow-y-scroll bg-black snap-y snap-mandatory caret-inherit max-w-screen scrollbar-hide scroll-smooth">
       <Head>
