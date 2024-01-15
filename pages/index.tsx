@@ -42,44 +42,44 @@ const Home = ({portfolio, about, coursework, skills, resume, contact, intro, soc
         <link rel="icon" href="/VR-logo.png" />
       </Head>
 
-      {/* @ts-expect-error async server component */}
+      {/* @ts-ignore async server component */}
       <Header socials={socials} />
       
       <section id="home" className="snap-center">
-        {/* @ts-expect-error async server component */}
+        {/* @ts-ignore async server component */}
         <LandingPage intro={intro} />
       </section>
       
       <section className="snap-center" >
-        {/* @ts-expect-error async server component */}
+        {/* @ts-ignore async server component */}
         <About about={about} titles={titles[2]} />
       </section>
       
       <section className="snap-center" >
-        {/* @ts-expect-error async server component */}
+        {/* @ts-ignore async server component */}
         <Coursework coursework={coursework} titles={titles[1]} />
       </section>
       
       <section className="snap-center">
-        {/* @ts-expect-error async server component */}
+        {/* @ts-ignore async server component */}
         <Portfolio portfolio={portfolio} titles={titles[5]} />
       </section>
       
       <section className="snap-center">
-        {/* @ts-expect-error async server component */}
+        {/* @ts-ignore async server component */}
         <Skillset skills={skills} titles={titles[4]} />  
       </section>
       
       <section className="snap-center">
-        {/* @ts-expect-error async server component */}
+        {/* @ts-ignore async server component */}
         <Resume resume={resume} titles={titles[3]} />
       </section>
       
       
       <section className="snap-center">
-        {/* @ts-expect-error async server component */}
+        {/* @ts-ignore async server component */}
         <Contact contact={contact} titles={titles[0]} />
-        {/* @ts-expect-error async server component */}
+        {/* @ts-ignore async server component */}
         <Footer socials={socials} />
       </section>
       
