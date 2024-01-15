@@ -1,8 +1,11 @@
 import { Socials } from "../typings";
+import { groq } from 'next-sanity';
+import { sanityClient } from '../sanity';
+
+const query = groq`*[_type == "socials"]`;
 
 export const getSocials = async () => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getSocials`);
-    const data = await res.json();
-    const socials: Socials[] = data.socials;
+    const res = await sanityClient.fetch(query);
+    const socials: Socials[] = res;
     return socials;
 }

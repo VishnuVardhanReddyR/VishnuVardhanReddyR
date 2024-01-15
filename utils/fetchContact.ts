@@ -1,8 +1,11 @@
 import { Contacts } from "../typings";
+import { groq } from 'next-sanity';
+import { sanityClient } from '../sanity';
+
+const query = groq`*[_type == "contact"]`;
 
 export const getContact = async () => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getContact`);
-    const data = await res.json();
-    const contact: Contacts[] = data.contact;
+    const res = await sanityClient.fetch(query);
+    const contact: Contacts[] = res;
     return contact;
 }
