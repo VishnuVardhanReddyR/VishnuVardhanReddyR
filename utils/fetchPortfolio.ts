@@ -1,11 +1,8 @@
 import { Portfolios } from "../typings";
-import { groq } from 'next-sanity';
-import { sanityClient } from '../sanity';
-
-const query = groq`*[_type == "portfolio"]`;
 
 export const getPortfolio = async () => {
-    const res = await sanityClient.fetch(query);
-    const portfolio: Portfolios[] = res;
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getPortfolio`);
+    const data = await res.json();
+    const portfolio: Portfolios[] = data.portfolio;
     return portfolio;
 }

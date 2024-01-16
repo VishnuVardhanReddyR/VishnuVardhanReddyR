@@ -1,11 +1,8 @@
 import { Resumes } from "../typings";
-import { groq } from 'next-sanity';
-import { sanityClient } from '../sanity';
-
-const query = groq`*[_type == "resume"]`;
 
 export const getResume = async () => {
-    const res = await sanityClient.fetch(query);
-    const resume: Resumes[] = res;
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getResume`);
+    const data = await res.json();
+    const resume: Resumes[] = data.resume;
     return resume;
 }

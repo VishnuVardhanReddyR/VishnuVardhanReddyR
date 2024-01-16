@@ -1,14 +1,8 @@
 import { CourseWorks } from "../typings";
-import { groq } from 'next-sanity';
-import { sanityClient } from '../sanity';
-
-const query = groq`*[_type == "coursework"] { 
-    ..., 
-    Courses[]->
-  }`;
 
 export const getCoursework = async () => {
-    const res = await sanityClient.fetch(query);
-    const coursework: CourseWorks[] = res;
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getCoursework`);
+    const data = await res.json();
+    const coursework: CourseWorks[] = data.coursework;
     return coursework;
 }
