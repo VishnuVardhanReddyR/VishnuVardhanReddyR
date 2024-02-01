@@ -22,7 +22,7 @@ import { getSocials } from '../utils/fetchSocials';
 import { getTitles } from '../utils/fetchTitles';
 
 type Props = {
-  portfolio: Portfolios[]; 
+  portfolio: Portfolios[];
   about: AboutAuthor[];
   coursework: CourseWorks[];
   skills: Skills[];
@@ -33,7 +33,7 @@ type Props = {
   titles: Titles[];
 };
 
-const Home = ({portfolio, about, coursework, skills, resume, contact, intro, socials, titles }: Props) => {
+const Home = ({ portfolio, about, coursework, skills, resume, contact, intro, socials, titles }: Props) => {
 
   return (
     <div className="h-screen overflow-y-scroll bg-black snap-y snap-mandatory caret-inherit max-w-screen scrollbar-hide scroll-smooth">
@@ -44,45 +44,45 @@ const Home = ({portfolio, about, coursework, skills, resume, contact, intro, soc
 
       {/* @ts-ignore async server component */}
       <Header socials={socials} />
-      
-      <section id="home" className="snap-center">
+
+      <section id="home" className="snap-start">
         {/* @ts-ignore async server component */}
         <LandingPage intro={intro} />
       </section>
-      
-      <section className="snap-center" >
+
+      <section className="snap-start" >
         {/* @ts-ignore async server component */}
         <About about={about} titles={titles[2]} />
       </section>
-      
-      <section className="snap-center" >
+
+      <section className="snap-start" >
         {/* @ts-ignore async server component */}
         <Coursework coursework={coursework} titles={titles[1]} />
       </section>
-      
-      <section className="snap-center">
+
+      <section className="snap-start">
         {/* @ts-ignore async server component */}
         <Portfolio portfolio={portfolio} titles={titles[5]} />
       </section>
-      
-      <section className="snap-center">
+
+      <section className="snap-start">
         {/* @ts-ignore async server component */}
-        <Skillset skills={skills} titles={titles[4]} />  
+        <Skillset skills={skills} titles={titles[4]} />
       </section>
-      
-      <section className="snap-center">
+
+      <section className="snap-start">
         {/* @ts-ignore async server component */}
         <Resume resume={resume} titles={titles[3]} />
       </section>
-      
-      
-      <section className="snap-center">
+
+
+      <section className="snap-center ">
         {/* @ts-ignore async server component */}
         <Contact contact={contact} titles={titles[0]} />
         {/* @ts-ignore async server component */}
         <Footer socials={socials} />
       </section>
-      
+
 
     </div>
   )
