@@ -55,6 +55,11 @@ const Home = ({ portfolio, about, coursework, skills, resume, contact, intro, so
         <About about={about} titles={titles[2]} />
       </section>
 
+      <section className="snap-start">
+        {/* @ts-ignore async server component */}
+        <Skillset skills={skills} titles={titles[4]} />
+      </section>
+      
       <section className="snap-start" >
         {/* @ts-ignore async server component */}
         <Coursework coursework={coursework} titles={titles[1]} />
@@ -63,11 +68,6 @@ const Home = ({ portfolio, about, coursework, skills, resume, contact, intro, so
       <section className="snap-start">
         {/* @ts-ignore async server component */}
         <Portfolio portfolio={portfolio} titles={titles[5]} />
-      </section>
-
-      <section className="snap-start">
-        {/* @ts-ignore async server component */}
-        <Skillset skills={skills} titles={titles[4]} />
       </section>
 
       <section className="snap-start">
